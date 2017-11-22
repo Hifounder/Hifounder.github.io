@@ -1,0 +1,11 @@
+@media screen and (max-width:960px)
+    {
+    .logo_croud1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100px;
+    background-color: #271F1C;
+    position: absolute;
+}
+}
