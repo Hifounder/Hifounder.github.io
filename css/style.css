@@ -173,35 +173,11 @@ body{
 }
 
 #cross {
-            border: 1px solid #455;
             width: 60px;
             height: 40px;
             position: relative;
             float: right;
         }
-
-/* #cross .line1, #cross .line2 , #cross .line3 {
-            width: 50%;
-            border: solid 2px black;
-            border-radius:2px; 
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            transition-duration: 1s;
-        }
-
-        .line1{
-            top: 30%;
-        }
-
-        .line2{
-            top: 50%;
-        }
-
-        .line3{
-            top:70%;
-        } */
-
 
 #nav1 p{
     position: absolute;
@@ -218,14 +194,17 @@ body{
 }
 
 .nav_btn{
-    width: 40%;
     height: 100px;
-    background-color: #271F1C;
     float: right;
     font-family: 標楷體;
     display: flex;   
     flex-wrap: nowrap;
-    
+    padding:auto;
+    margin-top: 10px; 
+}
+
+.menu_item{
+    width: 20%;
 }
 .nav_btn a{
     text-decoration: none;
@@ -234,6 +213,7 @@ body{
     font-size: 30px;
     float: left;
     padding: 1.5vw;
+    
 }
 
 
@@ -534,11 +514,11 @@ body{
             right: 10%;
         }
         50%{
-            right: 2%;
+            right: 0%;
         
         }
         100%{
-            right: 2%;
+            right: 0%;
         }
     }
 
@@ -664,7 +644,7 @@ body{
 }
 
 .icon_cround{
-    width: 600px;
+    width: 0px;
     height: 10vh;
     float: right;
     position: relative;
@@ -678,7 +658,7 @@ body{
     background-color: rgb(194, 192, 192);
     border-radius: 50px;
     position: absolute;
-    right: 100px;
+    right: 5vw;
     bottom: 10px;
 }
 

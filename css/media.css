@@ -1,5 +1,17 @@
+@media screen and (min-width:960px)
+{
+    .cross{
+        display: none;
+    }
+}
+
 @media screen and (max-width:960px)
     {
+        
+        body{
+            overflow-x: hidden;
+        }
+
     .logo_croud1{
         margin-left: auto;
         margin-right: auto;
@@ -21,7 +33,7 @@
     .logo_croud1 p{
         position: absolute;
         font-family: 標楷體;
-        font-size: 33px;
+        font-size: 8vw;
         color: white;
         text-shadow: 0 0 10px #271F1C;
         margin: 0;
@@ -32,7 +44,8 @@
     }
     #top_story{
     top: 10%;
-    left: 30vw;
+    left: 28vw;
+    height: 0%;
     border: none;
     position: absolute;
     background-color: transparent;
@@ -40,14 +53,14 @@
 
     #top_story p{
     margin: 0;
-    width: 300px;
+    width: 90vw;
     font-family: 標楷體;
     writing-mode: horizontal-tb ;
-    font-size: 15px;
+    font-size: 4.5vw;
     color: white;
     text-shadow: 0 0 1px rgb(32, 29, 29);
     position: absolute;
-    left: 0%;
+    left: -215%;
     transform: translate(0%,0%)
 
 }
@@ -96,11 +109,82 @@
     display: flex;
     position: relative;
 }
-.nav_btn{
-    float: left;
+.cross{
+    position: absolute;
+    
+    top: -45px;
 }
+.cross .line1, .cross .line2 , .cross .line3 {
+            width: 50%;
+            border: solid 2px rgb(255, 255, 255);
+            border-radius:2px; 
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition-duration: 1s;
+        }
+.line1{
+            top: 30%;
+        }
+
+        .line2{
+            top: 50%;
+        }
+
+        .line3{
+            top:70%;
+        }
+
+.nav_btn{
+    margin:0px;
+    width: 50%;
+    height: 100px;
+    float: none;
+    font-family: 標楷體;
+    display: flex;   
+    flex-wrap: nowrap;
+    flex-direction:column;
+    position: fixed;
+    text-align: center;
+    right: 0;
+    top:60px;
+    transform: translateX(-50px);
+    transition: all 1s;
+    z-index: 1000;
+
+}
+
+.nav_btn.active{
+            transform: translateX(50px);
+        }
+
+        
+.nav_btn a{
+    font-size: 20px;
+    
+}
+.nav_btn_bgc{
+    top: 50px;
+    width:25vw;
+    height: calc(100vh - 50px);
+    background-color: rgba(39, 31, 28, 0.5);
+    position: fixed;
+    right: 0;
+    transform: translateX(0px);
+    transition: all 1s;
+}
+.nav_btn_bgc.active{
+            transform: translateX(200px);
+        }
+.menu_item{
+    width: 40%;
+    height: 100px;
+    margin-left:30vw;
+    right: 0;    
+}
+
 .logo{
-    width: 200px;
+    width: 50vw;
     height: 3vh;
     background-color: #A32728;
     position: absolute;
@@ -131,7 +215,7 @@
     
 }
 .been_all{
-    width:600px;
+    width:60%;
     height: 50vh;
     position: absolute;
     top: 70%;
@@ -230,14 +314,20 @@
 }
 .story_font{
     width: 50vh;
-    height: 50vh;
+    height: 60vh;
     border: none;
     background-color: transparent;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 80%;
     transform: translate(-50%,-50%);
     text-shadow:  2px 2px 2px black;
+}
+.story_font pre{
+    font-family: 標楷體;
+    color: white;
+    text-align: center;
+    font-size: 15px;
 }
 #menu{
     background-image: none;
@@ -248,8 +338,8 @@
 
 
 #ig_food{
-    width: 50vh;
-    height: 50vh;
+    width: 40vh;
+    height: 40vh;
     background-image: url('/img/been03.png');
     background-size: cover;
     position: absolute;
@@ -260,19 +350,95 @@
     opacity: 0.5;
     
 }
+#ig_fog1{
+    width: 48vh;
+    height: 48vh;
+    background-image: url('/img/fog 01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 1000;
+
+    
+}
+#ig_fog2{
+    width: 50vh;
+    height: 50vh;
+    background-image: url('/img/fog 02.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    
+}
+.go_instagram .go_font{
+    text-align: center;
+    width: 15vw;
+    font-size: 2.5vw;
+    font-family: 標楷體;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
 
 .card{
-    width: 200px;
-    height: 200px;
+    width: 30vh;
+    height: 30vh;
     background-image: url('/img/123123-06.png');
     background-color: rgba(39, 31, 28, 0.5);
     background-size: contain;
     position: absolute;
     z-index: 1000;
     border: 5px solid sandybrown;
-    top: 50%;
-    right: 100px;
+    top: 70%;
+    left: 5vw;
     transform: translate(0,-50%)
 }
+.icon1{
+    width: 40px;
+    height: 40px;
+    background-image: url('/img/facebook_icon.svg');
+    background-size: cover;
+    background-color: rgb(194, 192, 192);
+    border-radius: 50px;
+    position: absolute;
+    right: 22vw;
+    bottom: 10px;
+}
+#top-btn {
+    width: 40px;
+    height: 40px;
+    bottom: -50px;
+    right: 20px;
+    position: fixed;
+    text-align: center;
+    border-radius: 100px;
+    background-color: rgb(100, 79, 72);
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.12), 3px 4px 8px 0px rgba(0, 0, 0, 0.11);
+    -webkit-transition: all .8s;
+    transition: all .8s;
+  }
 
+    #top-btn i 
+    {
+    padding-top: 0px;
+    font-size: 15px;
+    line-height: 38px;
+    color: #FFFFFF;
+    -webkit-transition: all .8s;
+    transition: all .8s;
+  }
+.footer_logo{
+    width: 60%;
+    height: 10vh;
+    position: absolute;
+}
 }
