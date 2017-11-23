@@ -193,7 +193,7 @@ body{
 
 }
 
-.nav_btn{
+#nav_btn{
     height: 100px;
     float: right;
     font-family: 標楷體;
@@ -206,7 +206,7 @@ body{
 .menu_item{
     width: 20%;
 }
-.nav_btn a{
+#nav_btn a{
     text-decoration: none;
     color: white;
     text-shadow: 0 0 10px #271F1C;
@@ -474,7 +474,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 20%;
+    top: 40%;
     left: 10%;
     
 }
@@ -500,7 +500,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 20%;
+    top: 40%;
     right: 10%;
     
 }
@@ -663,7 +663,7 @@ body{
 }
 
 
-.nav_btn a:hover{
+#nav_btn a:hover{
 
     animation: box1 1s forwards;
 
@@ -720,5 +720,4 @@ body{
         height: 90vh;
         display: none;
     }
-
-    
+ 
