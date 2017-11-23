@@ -50,24 +50,49 @@
                 <div class="logo"></div>
                 <p>世界豆漿大王</p>
             </div>
-            <div class="nav_btn">
-                <a href="#top" id="btn_top">首頁</a>
-                <a href="#been_make_croud" id="btn_been_make_croud">經典</a>
-                <a href="#story" id="btn_story">故事</a>
-                <a href="#menu" id="btn_menu">料理</a>
-                <a href="#instagram" id="btn_instagram">標籤</a>
-                <a href="#map_footer" id="btn_map_footer">聯繫</a>
+
+
+
+            <div id="outmenu" class="outmenu">
+                <nav>
+                    <div onclick="toggle_class()" id="cross" class="cross">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </nav>
+                
+                    <div class="nav_btn">
+                        <div class="menu_item">
+                            <a href="#top" id="btn_top">首頁</a>
+                        </div>
+                        <div class="menu_item">
+                            <a href="#been_make_croud" id="btn_been_make_croud">經典</a>
+                        </div>
+                        <div class="menu_item">
+                            <a href="#story" id="btn_story">故事</a>
+                        </div>
+                        <div class="menu_item">
+                            <a href="#menu" id="btn_menu">料理</a>
+                        </div>
+                        <div class="menu_item">
+                            <a href="#instagram" id="btn_instagram">標籤</a>
+                        </div>
+                        <div class="menu_item">
+                            <a href="#map_footer" id="btn_map_footer">聯繫</a>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    <div class="nav_btn_bgc"></div>
+
+
+
+
                 <div style="clear:both"></div>
             </div>
 
-            <!-- <nav id="navbar" class="navbar ">
-                <div onclick="toggle_class()" id="cross">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-                <div style="clear:both"></div>
-            </nav> -->
+
 
 
         </div>
@@ -80,7 +105,7 @@
             <div class="been_img"></div>
         </div>
         <div class="been_tittle">
-                <pre><span style="color:red;">經典</span> 古早味</div>
+            <pre><span style="color:red;">經典</span> 古早味</div>
                     <div class="how_to_make"></div>
         </div>
         
@@ -106,9 +131,9 @@
 王的美食權威，亦造成坊間競相模仿、掛
 名的旋風，
     <h2>台灣當代平民美食文化</h2> </pre>
-            </div>
-            <div style="clear:both"></div>
         </div>
+        <div style="clear:both"></div>
+    </div>
     </div>
     </div>
 
@@ -256,12 +281,12 @@
         });
 
         $(window).scroll(function () {
-            var ig_fog2_height = $("#top").height() + $("#nav").height() + $("#been_make_croud").height() + $("#story").height() + $("#box").height() 
+            var ig_fog2_height = $("#top").height() + $("#nav").height() + $("#been_make_croud").height() + $("#story").height() + $("#box").height()
             var fixnav = $(window).scrollTop();
             if (fixnav >= ig_fog2_height) {
                 $('#ig_fog1').addClass('ig_fog1'),
-                $('#ig_fog2').addClass('ig_fog2'),
-                $('#ig_food').addClass('ig_food')
+                    $('#ig_fog2').addClass('ig_fog2'),
+                    $('#ig_food').addClass('ig_food')
 
             }
         });
@@ -292,6 +317,15 @@
         });
 
     </script>
+    <script>
+
+        function toggle_class() {
+            var menu = document.querySelector('.nav_btn');
+            var nav_btn_bgc = document.querySelector('.nav_btn_bgc');
+            menu.classList.toggle('active');
+            nav_btn_bgc.classList.toggle('active');
+        }
+    </script>
 
     <script>
         jQuery(document).ready(function ($) {
@@ -309,7 +343,7 @@
         var map;
         function initMap() {
             var been_store = { lat: 25.01549, lng: 121.5161142 };
-            var content_map = { lat: 25.015468, lng: 121.517629 };
+            var content_map = { lat: 25.01549, lng: 121.5161142 };
             map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 18,
                 center: content_map,
