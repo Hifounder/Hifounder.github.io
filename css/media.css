@@ -3,6 +3,9 @@
     .cross{
         display: none;
     }
+    .menu_card_croud2{
+        display: none
+    }
 }
 
 @media screen and (max-width:960px)
@@ -401,19 +404,26 @@
 #menu{
     background-image: none;
 }
-#menu_text h2{
-    margin: 1vw;
-    text-align: center;
-    color: white;
-    font-size: 5vw;
+
+.menu_card_croud{
+    display:none;
 }
-#menu_text p{
-    color: white;
-    font-family: 微軟正黑體;
-    font-size: 20px;
-    margin: 0;
-    padding:0;
+.menu_card_croud2{
+    display: block;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 5%;
 }
+.swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+ .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+
+ }
 
 
 
