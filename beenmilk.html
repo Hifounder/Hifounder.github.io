@@ -56,7 +56,7 @@
 
             <div id="outmenu" class="outmenu">
                 <nav>
-                    <div onclick="toggle_class()" id="cross" class="cross">
+                    <div id="cross" class="cross">
                         <div class="line1"></div>
                         <div class="line2"></div>
                         <div class="line3"></div>
@@ -335,27 +335,56 @@
 
             }
         });
-
-
-        $('.cross').click(function () {
-            $('.cross').toggleClass('active')
-        });
-
+        
+        
         $(window).scroll(function () {
             var Top_height = $("#top").height();
             var scrollTop = $(window).scrollTop();
             if (scrollTop >= Top_height) {
-                $('#nav_btn_bgc').addClass('nav_btn_bgc_block'),
-                    $('#nav_btn_bgc').removeClass('nav_btn_bgc_none'),
-                    $('#nav_btn').removeClass('nav_btn_none')
+                    $('#nav_btn_bgc').addClass('nav_btn_bgc_block');
+                    $('#nav_btn_bgc').removeClass('nav_btn_bgc_none');
+                    $('#nav_btn').removeClass("nav_btn_none");
                 // $('#nav_btn').addClass('nav_btn')
             } else {
-                $('#nav_btn_bgc').removeClass('nav_btn_bgc_block'),
-                    $('#nav_btn_bgc').addClass('nav_btn_bgc_none'),
-                    $('#nav_btn').addClass('nav_btn_none')
+                $('#nav_btn_bgc').removeClass('nav_btn_bgc_block');
+                $('#nav_btn_bgc').addClass('nav_btn_bgc_none');
+                $('#nav_btn').addClass('nav_btn_none');
+                $("#nav_btn").removeClass("active");
+                $("#nav_btn_bgc").removeClass("active");
                 // $('#nav_btn').removeClass('nav_btn')
+
+                //如果底下還是展開的話,卷軸往上時,要關閉選單
+                $('#cross').removeClass("active");
             }
         });
+
+        $('#cross').click(function () {
+            var Top_height = $("#top").height();
+            var scrollTop = $(window).scrollTop();
+
+            //判斷目前位置
+            if (scrollTop >= Top_height){
+                $('#cross').toggleClass("active");
+                $("#nav_btn").toggleClass("active");
+                $("#nav_btn_bgc").toggleClass("active");
+            } 
+        });
+
+        // var Top_height = $("#top").height();
+        // var scrollTop = $(window).scrollTop();
+        // if (scrollTop >= Top_height){
+        //     $('#cross').click(function () {
+        //         $(this).addClass("active");
+        //         $("#nav_btn").addClass("active");
+        //         $("#nav_btn_bgc").addClass("active");
+        //     });
+        // }else{
+        //     $('#cross').click(function () {
+        //         $(this).removeClass("active");
+        //         $("#nav_btn").removeClass("active");
+        //         $("#nav_btn_bgc").removeClass("active");
+        //     });
+        // }
 
 
         $('#btn_top').click(function () {
