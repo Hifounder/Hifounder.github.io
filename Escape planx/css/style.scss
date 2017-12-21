@@ -19,7 +19,7 @@ body {
     position: absolute;
     left: 2%;
     top: 7%;
-    background-image: url("/img/PLAN- X LOGO.png");
+    background-image: url("img/PLAN- X LOGO.png");
     background-size: contain;
     z-index: 2000;
 }
@@ -28,16 +28,16 @@ body {
     width: 100%;
     height: calc(100vh - 56px);
     #banner_img01 {
-        background-image: url("/img/banner 1.jpg");
+        background-image: url("img/banner 1.jpg");
         background-position: center;
         background-position-y: -300px;
     }
     #banner_img02 {
-        background-image: url("/img/banner 2.jpg");
+        background-image: url("img/banner 2.jpg");
         background-position: center;
     }
     #banner_img03 {
-        background-image: url("/img/banner 3.jpg");
+        background-image: url("img/banner 3.jpg");
         background-position: center;
     }
 }
@@ -111,7 +111,7 @@ body {
     box-shadow: 500px 0 0 0 rgba(0, 0, 0, 0.5) inset;
 }
 .member_bg_img{
-    background-image: url("/img/member_link_img.png");
+    background-image: url("img/member_link_img.png");
     background-attachment: fixed;
     height: 1080px;
 }
@@ -123,7 +123,7 @@ body {
 }
 //Studio
 .studio_img {
-    background-image: url("/img/studio.jpg");
+    background-image: url("img/studio.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -282,14 +282,14 @@ body {
 //robot
 .product_robot {
     height: calc(100vh - 256px);
-    background-image: url("/img/robot/robot01.png");
+    background-image: url("img/robot/robot01.png");
     opacity: 0.6;
     background-position-y: -50px;
 }
 
 .product_robot:hover {
     height: calc(100vh - 256px);
-    background-image: url("/img/robot/robot00.png");
+    background-image: url("img/robot/robot00.png");
     background-position-y: 0px;
     box-sizing: border-box;
     opacity: 1;
@@ -299,14 +299,14 @@ body {
 //hank
 .product_hank {
     height: calc(100vh - 256px);
-    background-image: url("/img/hank/hank01.png");
+    background-image: url("img/hank/hank01.png");
     opacity: 0.6;
     background-position: center;
 }
 
 .product_hank:hover {
     height: calc(100vh - 256px);
-    background-image: url("/img/hank/hank00.png");
+    background-image: url("img/hank/hank00.png");
     opacity: 1;
     box-sizing: border-box;
     transition-duration: 0.2s;
@@ -315,7 +315,7 @@ body {
 //matt
 .product_matt {
     height: calc(100vh - 256px);
-    background-image: url("/img/matt/matt01.png");
+    background-image: url("img/matt/matt01.png");
     opacity: 0.6;
     background-position: center;
     background-position-y: -80px;
@@ -323,7 +323,7 @@ body {
 
 .product_matt:hover {
     height: calc(100vh - 256px);
-    background-image: url("/img/matt/matt00.png");
+    background-image: url("img/matt/matt00.png");
     background-position-y: 0px;
     box-sizing: border-box;
     transition-duration: 0.2s;
@@ -333,14 +333,14 @@ body {
 //dasbe
 .product_dasbe {
     height: calc(100vh - 256px);
-    background-image: url("/img/dasbe/dasbe01.png");
+    background-image: url("img/dasbe/dasbe01.png");
     background-position: center;
     opacity: 0.6;
 }
 
 .product_dasbe:hover {
     height: calc(100vh - 256px);
-    background-image: url("/img/dasbe/dasbe00.png");
+    background-image: url("img/dasbe/dasbe00.png");
     box-sizing: border-box;
     transition-duration: 0.2s;
     opacity: 1;
@@ -349,14 +349,14 @@ body {
 //stewart
 .product_stewart {
     height: calc(100vh - 256px);
-    background-image: url("/img/stewart/stewart01.png");
+    background-image: url("img/stewart/stewart01.png");
     background-position: center;
     opacity: 0.6;
 }
 
 .product_stewart:hover {
     height: calc(100vh - 256px);
-    background-image: url("/img/stewart/stewart00.png");
+    background-image: url("img/stewart/stewart00.png");
     box-sizing: border-box;
     transition-duration: 0.2s;
     opacity: 1;
@@ -454,7 +454,7 @@ body {
 
 //mp&ig
 .mp_ig_img {
-    background-image: url("/img/mapimg.jpg");
+    background-image: url("img/mapimg.jpg");
     background-position: center;
     background-position-y: 900px;
     width: 100%;
@@ -471,7 +471,7 @@ body {
 }
 //footer
 .footerimg{
-    background-image: url("/img/Connection.jpg");
+    background-image: url("img/Connection.jpg");
     height: 1080px;
     background-size: cover;
     background-repeat: no-repeat;
