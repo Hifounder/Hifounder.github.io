@@ -80,13 +80,13 @@ body{
     background-size: cover;
 }
 .bg-img.img01{
-    background-image: url('/img/store01.jpg');
+    background-image: url('img/store01.jpg');
 }
 .bg-img.img02{
-    background-image: url('/img/store02.jpg');
+    background-image: url('img/store02.jpg');
 }
 .bg-img.img03{
-    background-image: url('/img/store03.jpg');
+    background-image: url('img/store03.jpg');
 }
 .chinese_croud{
     position: absolute;
@@ -230,7 +230,7 @@ body{
     position: absolute;
     width: 61.80%;
     height: 100%;
-    background-image: url('/img/been01.jpg');
+    background-image: url('img/been01.jpg');
     background-attachment: fixed;
     background-position:100% 40%;
     margin: 0;
@@ -260,7 +260,7 @@ body{
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
-    background-image: url('/img/how to make.jpg');
+    background-image: url('img/how to make.jpg');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -282,7 +282,7 @@ body{
 #story_left{
     width: 0%;
     height: 70vh;
-    background-image: url('/img/store old story.jpg');
+    background-image: url('img/store old story.jpg');
     background-position: 0% 60%;
     float: left;
     position: absolute;
@@ -316,7 +316,7 @@ body{
     width: 100%;
     height: 100%;
     float: right;
-    background-image: url('/img/story right.png');
+    background-image: url('img/story right.png');
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -347,7 +347,7 @@ body{
     width: 100%;
     height: 100vh;
     background-color: #271F1C;
-    background-image: url('/img/155684f4f75335b.png');
+    background-image: url('img/155684f4f75335b.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: 20%;
@@ -383,15 +383,15 @@ body{
     border-right: 3px solid sandybrown; 
 }
 .menu_card_img1{
-    background-image: url('/img/food01.jpg');
+    background-image: url('img/food01.jpg');
     background-size: cover;
 }
 .menu_card_img2{
-    background-image: url('/img/food02.jpg');
+    background-image: url('img/food02.jpg');
     background-size: cover;
 }
 .menu_card_img3{
-    background-image: url('/img/food03.jpg');
+    background-image: url('img/food03.jpg');
     background-size: cover;
 }
 #menu_text{
@@ -425,7 +425,7 @@ body{
 .ig_bg_img{
     width: 100%;
     height: 100vh;
-    background-image: url('/img/igbg.jpg');
+    background-image: url('img/igbg.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 50%;
@@ -436,7 +436,7 @@ body{
 #ig_food{
     width: 500px;
     height: 500px;
-    background-image: url('/img/been03.png');
+    background-image: url('img/been03.png');
     background-size: cover;
     position: absolute;
     top: 50%;
@@ -470,7 +470,7 @@ body{
 #ig_fog1{
     width: 500px;
     height: 500px;
-    background-image: url('/img/fog 01.png');
+    background-image: url('img/fog 01.png');
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -496,7 +496,7 @@ body{
 #ig_fog2{
     width: 500px;
     height: 500px;
-    background-image: url('/img/fog 02.png');
+    background-image: url('img/fog 02.png');
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -598,7 +598,7 @@ body{
 .card{
     width: 400px;
     height: 400px;
-    background-image: url('/img/123123-06.png');
+    background-image: url('img/123123-06.png');
     background-color: rgba(39, 31, 28, 0.5);
     position: absolute;
     z-index: 1000;
@@ -653,7 +653,7 @@ body{
 .icon1{
     width: 55px;
     height: 55px;
-    background-image: url('/img/facebook_icon.svg');
+    background-image: url('img/facebook_icon.svg');
     background-size: cover;
     background-color: rgb(194, 192, 192);
     border-radius: 50px;
