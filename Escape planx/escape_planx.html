@@ -1,742 +1,940 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/effect1.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico">
+
 
     <title>逃亡計劃ESCAPE PLAN "X"</title>
 </head>
 
 <body>
+    <div id="ip-container" class="ip-container">
+        <!-- lodeing -->
+        <header class="ip-header">
+            <h1 class="ip-logo">
+                <svg class="ip-inner" viewBox="-85 0 334 160" preserveAspectRatio="xMidYMin meet" aria-labelledby="logo_title">
+                    <g>
+                        <path fill="#020202" d="M164.1,21.9c-0.2-1-0.4-2-0.9-2.9c-1.5-2.3-3.7-3.2-6.4-3.2c-24.2,0-48.3,0-72.5,0c-23.9,0-47.9,0-71.8,0
+								c-2.2,0-4.1,0.5-5.8,1.8C6,18.1,5.4,18.7,5,19.5c-0.3,0.6-0.3,1.4-0.5,2.2c-0.1,0.4-0.2,0.9-0.2,1.3c0.1,1.8,0.7,3.3,1.7,4.8
+								c2.8,4.7,5.4,9.5,8.1,14.2c3.5,6.1,7.1,12.3,10.6,18.4c2.4,4.1,4.7,8.3,7.1,12.4c1.8,3,3.6,6,5.3,9.1c2.7,4.7,5.4,9.3,8.1,14
+								c4.3,7.5,8.7,15,13,22.5c3.7,6.4,7.3,12.7,11,19.1c2.5,4.4,4.9,8.7,7.5,13.1c1,1.7,1.7,3.8,3.8,4.6c0.9,0.4,1.8,0.8,2.7,0.9
+								c1,0.1,2-0.2,3-0.3c1.4-0.1,2.4-0.9,3.2-1.9c1.1-1.4,2-3,2.9-4.6c2.9-5,5.8-10,8.7-15.1c3.2-5.6,6.4-11.2,9.7-16.8
+								c3.2-5.5,6.4-11,9.6-16.6c2.9-5.1,5.8-10.2,8.7-15.3c2-3.5,4-6.9,6-10.4c3.1-5.4,6.2-10.8,9.4-16.3c2.9-5.1,5.9-10.2,8.9-15.3
+								c3-5.2,6.1-10.4,9-15.6C163.6,26.1,164.6,24.2,164.1,21.9z M84.3,149c-5.5-9.5-10.9-18.9-16.4-28.4c1.1,0,2,0,3,0c1.5,0,3,0,4.6,0
+								c0.6,0,0.9-0.2,1.3-0.7c2.5-3.3,5-6.6,7.6-9.8c0,0,0.1,0,0.1,0c1.3,1.7,2.6,3.3,3.9,5c1.3,1.7,2.5,3.4,3.9,5c0.2,0.3,0.7,0.5,1,0.5
+								c2.5,0,4.9,0,7.5,0C95.2,130.1,89.8,139.5,84.3,149z M128,73.3c-0.1,0-0.1,0-0.2,0c0-5.3,0-10.7,0-16.1c-2.8,0-5.4,0-8.2,0
+								c0,3.8,0,7.7,0,11.5c-0.1,0-0.1,0-0.2,0c-1.7-3.9-3.5-7.7-5.2-11.6c-2.7,0-5.4,0-8.1,0c0,9,0,17.9,0,26.9c2.7,0,5.3,0,8.1,0
+								c0-3.8,0-7.7,0-11.5c0.1,0,0.1,0,0.2,0c0.8,1.8,1.5,3.6,2.3,5.5c0.7,1.8,1.5,3.6,2.2,5.5c0.2,0.5,0.5,0.8,1.1,0.7
+								c0.5-0.1,1,0,1.7,0c-6.2,10.8-12.3,21.4-18.5,32.1c-0.7-0.9-1.4-1.7-2-2.5c-2.7-3.2-5.3-6.5-8-9.7c-0.3-0.4-0.3-0.6,0-1
+								c2.1-2.6,4.1-5.2,6.2-7.7c2-2.4,3.9-4.9,5.9-7.3c0.1-0.1,0.1-0.2,0.2-0.4c-0.4,0-0.7,0-0.9,0c-4,0-8,0-12,0c-0.5,0-0.9,0.1-1.2,0.6
+								c-2,2.9-4,5.8-6,8.7c-0.2,0.2-0.3,0.5-0.6,0.8c-2.3-3.2-4.5-6.2-6.6-9.3c-0.4-0.6-0.8-0.8-1.6-0.8c-4.2,0-8.5,0-13,0
+								c4.4,5.3,8.6,10.5,12.8,15.8c-3.6,4.3-7.1,8.6-10.8,13C59.3,105.7,53.2,95,46.9,84.2c1.3,0,2.3,0,3.5,0c0-3.6,0-7.2,0-10.9
+								c1.2,0,2.3,0.1,3.3,0c1.6-0.2,3.2-0.3,4.8-0.7c1.9-0.5,3-2.1,3-4.4c0-2.1,0-4.3-0.2-6.4c-0.2-2.2-1.6-3.3-3.7-3.9
+								c-2-0.6-4.1-0.8-6.2-0.7c-3.2,0-6.5,0-9.7,0c-0.3,0-0.6,0-1,0c0,5.3,0,10.6,0,15.8c-0.1,0-0.2,0.1-0.2,0.1
+								c-9.6-16.7-19.3-33.4-29-50.2c48.6,0,97,0,145.6,0C147.4,39.8,137.7,56.6,128,73.3z M50.5,68.7c0-2.3,0-4.6,0-7.1
+								c0.8,0.2,1.5,0.3,2.2,0.5c0.3,0.1,0.6,0.5,0.6,0.8c0.1,1.3,0.2,2.6,0.1,3.9c-0.1,1.3-0.6,1.8-1.9,1.9
+								C51.2,68.8,50.9,68.7,50.5,68.7z" />
+                        <path fill="#020202" d="M85.7,57.2c-0.3,0-0.5,0-0.8,0c-1.6,8.8-3.2,17.6-4.8,26.4c-0.1,0-0.1,0-0.2,0c0-1.6,0-3.2,0-4.9
+								c-1.6,0-3,0-4.5,0c-1.6,0-1.4,0.2-1.4-1.4c0-6.4,0-12.8,0-19.2c0-0.3,0-0.6,0-0.9c-3.3,0-6.4,0-9.7,0c0,9,0,17.9,0,26.9
+								c8.6,0,17.2,0,25.7,0c0.2-1.6,0.4-3.2,0.6-4.8c0.9,0,1.8,0,2.7,0c0.6,0,0.8,0.2,0.8,0.8c0.1,1.4,0.3,2.7,0.4,4.1c3.3,0,6.6,0,9.9,0
+								c-0.6-2.8-1.2-5.6-1.8-8.4c-1.2-5.9-2.4-11.9-3.6-17.8c-0.1-0.6-0.4-0.8-1-0.8C94,57.2,89.9,57.2,85.7,57.2z M92.4,63.9
+								c0.5,3.5,0.9,6.9,1.4,10.5c-1.1,0-2.1,0-3.3,0c0.6-3.5,1.2-7,1.7-10.5C92.3,63.9,92.3,63.9,92.4,63.9z" />
+                        <path fill="#020202" d="M91.4,53.9c0-0.7,0.1-1.4,0.2-2.1c0.6,0,1,0,1.5,0c0.1,1,0.2,1.9,0.3,2.9c1.5,0,2.9,0,4.5,0
+								C97,49,96.2,43.5,95.3,38c-2.1,0-4.2,0-6.3,0c-0.7,5.6-1.5,11.1-2.2,16.8c1.4,0,2.5,0,3.7,0C91.1,54.8,91.4,54.6,91.4,53.9z
+								 M92.2,42.5c0.1,0,0.1,0,0.2,0c0.2,2,0.4,4,0.6,6.1c-0.5,0-0.9,0.1-1.5,0.1C91.7,46.6,92,44.5,92.2,42.5z" />
+                        <path fill="#020202" d="M76.6,40.9c0.2-0.2,0.5-0.6,0.7-0.6c0.2,0,0.6,0.4,0.6,0.6c0.1,1.3,0.2,2.6,0.2,4.1c1.4,0,2.8,0,4.3,0
+								c0-1.1,0-2.2,0-3.2c-0.1-1.8-0.8-3.2-2.5-4c-1.4-0.6-2.9-0.6-4.3-0.3c-1.7,0.4-3.4,1.3-3.4,3.8c-0.1,3.3,0,6.7,0.1,10.1
+								c0.1,1.4,0.8,2.5,2.2,3c1,0.3,2.2,0.6,3.2,0.6c1.8-0.1,3.5-0.8,4.3-2.6c0.6-1.5,0.5-3,0.4-4.5c-1.5,0-2.9,0-4.4,0c0,0.7,0,1.3,0,2
+								c0,0.6-0.1,1.1-0.2,1.6c-0.1,0.2-0.4,0.6-0.6,0.6c-0.2,0-0.5-0.3-0.7-0.5c-0.1-0.2-0.1-0.5-0.1-0.8c0-3,0-6.1,0-9.1
+								C76.5,41.4,76.5,41.1,76.6,40.9z" />
+                        <path fill="#020202" d="M67.2,51.5c0-0.8,0.1-1.5,0-2.3c-0.1-1.5-0.7-2.8-2-3.7c-0.9-0.5-1.6-1.2-2.5-1.7c-1-0.6-1.5-1.4-1.2-2.6
+								c0.1-0.3,0.5-0.6,0.7-0.9c0.2,0.3,0.6,0.6,0.6,0.9c0.1,0.5,0,1.1,0,1.6c1.4,0,2.7,0,4.1,0c0-0.6,0-1.2,0-1.7
+								c-0.1-1.4-0.5-2.6-1.9-3.1c-1.5-0.6-3.1-0.7-4.7-0.3c-1.6,0.3-2.7,1.3-2.9,3c-0.1,0.9-0.1,1.9,0,2.9c0.1,1.3,0.9,2.2,2,2.9
+								c0.8,0.5,1.4,1.1,2.2,1.5c1.2,0.7,1.6,1.7,1.5,3c0,0.6-0.2,1.1-0.8,1.1c-0.7,0-0.8-0.6-0.8-1.1c0-0.8,0-1.6,0-2.3
+								c-1.4,0-2.6,0-4.1,0c0.1,1.1,0.1,2,0.2,3c0.1,1.5,0.9,2.4,2.2,2.9c1.8,0.7,3.5,0.7,5.3-0.1C66.4,53.9,67.1,52.9,67.2,51.5z"
+                        />
+                        <path fill="#020202" d="M102.3,54.7c1.5,0,2.9,0,4.3,0c0-2.3,0-4.5,0-6.7c1-0.1,1.8-0.2,2.6-0.3c1.3-0.1,2.2-1,2.3-2.3
+								c0.1-1.4,0-2.9,0-4.3c-0.1-1.9-0.7-2.8-2.5-3c-2.2-0.2-4.5-0.1-6.8-0.1C102.3,43.6,102.3,49.1,102.3,54.7z M106.7,40.7
+								c0.8,0,1.2,0.3,1.3,1.1c0.1,0.7,0.1,1.4,0,2.1c0,0.8-0.4,1.2-1.3,1C106.7,43.5,106.7,42.1,106.7,40.7z" />
+                        <path fill="#020202" d="M49.5,47.7c0.9,0,1.8,0,2.6,0c0-1.1,0-2.1,0-3.2c-0.9,0-1.7,0-2.6,0c0-1.1,0-2.1,0-3.1c0.9,0,1.8,0,2.7,0
+								c0-1.2,0-2.3,0-3.4c-2.5,0-4.8,0-7.2,0c0,5.6,0,11.1,0,16.7c2.6,0,5,0,7.6,0c0-1.2,0-2.3,0-3.5c-1.1,0-2.1,0-3.1,0
+								C49.5,50,49.5,48.9,49.5,47.7z" />
+                        <path fill="#020202" d="M121.1,47.7c0.9,0,1.8,0,2.6,0c0-1.1,0-2.1,0-3.2c-0.9,0-1.7,0-2.6,0c0-1.1,0-2.1,0-3.1c0.8,0,1.5,0,2.2,0
+								c0.2,0,0.6-0.3,0.6-0.5c0.1-1,0-2,0-3c-2.5,0-4.9,0-7.2,0c0,5.6,0,11.2,0,16.7c2.5,0,5,0,7.4,0c0-1.2,0-2.3,0-3.5
+								c-1.1,0-2.1,0-3.1,0C121.1,50,121.1,48.9,121.1,47.7z" />
+                        <path fill="#020202" d="M53.8,32.9c0.2-1.2,0.4-2.3,0.6-3.5c0.3,1,0.4,1.9,0.6,2.9c0,0.2,0.3,0.6,0.5,0.6c0.7,0.1,1.5,0,2.2,0
+								c0.3-2.8,0.6-5.4,0.9-8c-0.8,0-1.4,0-2.1,0c-0.2,1.5-0.3,3-0.5,4.5c0,0-0.1,0-0.1,0c-0.1-1.5-0.2-3-0.3-4.5c-0.8,0-1.5,0-2.2,0
+								c-0.2,1.5-0.4,3-0.5,4.4c0,0-0.1,0-0.1,0c-0.1-1.5-0.2-2.9-0.3-4.4c-0.8,0-1.4,0-2.1,0c0.3,2.7,0.6,5.3,1,8
+								C52.2,32.9,53,32.9,53.8,32.9z" />
+                        <path fill="#020202" d="M126.1,33c0.5,0,0.6-0.2,0.7-0.7c0.1-1,0.2-2,0.4-3c0,0,0.1,0,0.1,0c0.2,1.2,0.4,2.3,0.6,3.6
+								c0.7,0,1.3,0,1.9,0c0.6,0.1,0.8-0.2,0.8-0.8c0.1-1,0.2-1.9,0.3-2.9c0.2-1.5,0.3-2.9,0.5-4.4c-0.7,0-1.3,0-2,0
+								c-0.2,1.5-0.3,3-0.5,4.5c0,0-0.1,0-0.1,0c-0.1-1.5-0.3-3-0.4-4.5c-0.4,0-0.8,0-1.1,0c-0.8-0.1-1.1,0.2-1.2,1c0,1.1-0.2,2.1-0.3,3.2
+								c0,0-0.1,0-0.1,0c-0.1-1.4-0.3-2.7-0.4-4.1c-0.7,0-1.4,0-2,0c0.3,2.7,0.6,5.3,0.9,8C124.8,33,125.5,32.9,126.1,33z"
+                        />
+                        <path fill="#020202" d="M65.9,29.9c0.1,0,0.1,0,0.2-0.1c0.3,0.9,0.5,1.8,0.8,2.6c0.3,0.8,1,0.4,1.5,0.4c0.2,0,0.5-0.3,0.5-0.5
+								c0-2.5,0-5,0-7.5c-0.3,0-0.5-0.1-0.7-0.1c-1.2,0-1.2,0-1.2,1.2c0,0.5,0,1,0,1.6c-0.3-0.4-0.4-0.9-0.6-1.3c-0.6-1.7-0.1-1.4-2.1-1.4
+								c0,0-0.1,0.1-0.1,0c0,2.7,0,5.3,0,8c0.6,0,1.1,0,1.7,0C65.9,31.9,65.9,30.9,65.9,29.9z" />
+                        <path fill="#020202" d="M115.9,31.1c0-0.6,0.1-1.2,0.1-1.7c0.1,0,0.2,0,0.3,0c0.6,1.1,0.2,2.4,0.3,3.6c0.7,0,1.3,0,2,0
+								c-0.4-1.4,0.6-3-0.8-4.2c0.7-0.7,1-2.3,0.4-3.1c-0.2-0.3-0.7-0.7-1-0.7c-1.1-0.1-2.2,0-3.4,0c0,2.7,0,5.3,0,8c0.7,0,1.4,0,2.1,0
+								C115.9,32.3,115.9,31.7,115.9,31.1z M116,26.2c0.6,0.6,0.7,1,0,1.8C116,27.5,116,26.9,116,26.2z" />
+                        <path fill="#020202" d="M79.3,29.3c0.1,0,0.2,0,0.4,0c0.4,1.2,0,2.4,0.2,3.6c0.6,0,1.2,0,2.1,0c-0.6-1.5,0.4-3-0.9-4.2
+								C82,28,82,26,81.3,25.3c-0.2-0.2-0.4-0.3-0.6-0.3c-1.2,0-2.3,0-3.4,0c0,2.7,0,5.4,0,8c0.7,0,1.3,0,2.1,0
+								C79.3,31.7,79.3,30.5,79.3,29.3z" />
+                        <path fill="#020202" d="M74.4,32.8c0.1-0.1,0.3-0.1,0.4-0.1c0.5,0.1,0.9,0.2,1.4,0.4c0-1.6,0-3,0-4.4c-0.8,0-1.6,0-2.4,0
+								c0.1,0.4,0.1,0.8,0.1,1.1c0.1,0.5,0.2,0.9,0.3,1.4c0,0.1-0.2,0.3-0.4,0.5c-0.1-0.2-0.3-0.4-0.3-0.5c0-1,0-1.9,0-2.9
+								c0-0.7,0.1-1.4,0.2-2c0.1,0,0.2,0,0.4,0c0.1,0.6,0,1.4,0.4,1.6c0.4,0.3,1.2,0.1,1.8,0.2c0.2-1.9-0.2-2.7-1.6-3.1
+								c-1.3-0.4-2.9,0.2-3,1.3c-0.1,1.8-0.2,3.5,0,5.3C71.7,32.8,73.1,33.4,74.4,32.8z" />
+                        <path fill="#020202" d="M60.6,32.9c0.2-1.3,0.2-1.3,0.9-1.3c0.1,0.4,0.2,0.9,0.3,1.3c0.7,0,1.4,0,2,0c-0.4-2.5-0.7-5-1.1-7.5
+								c0-0.2-0.4-0.5-0.6-0.5c-0.8-0.1-1.6,0-2.6,0c-0.4,2.7-0.7,5.3-1.1,8C59.3,32.9,60,32.9,60.6,32.9z M61.3,27.5
+								c0,0.8,0.1,1.6,0.1,2.5C60.8,29.9,60.8,29.9,61.3,27.5z" />
+                        <path fill="#020202" d="M44.3,32.9c0.2-1.3,0.2-1.3,1-1.3c0,0.4,0.1,0.8,0.1,1.2c0.7,0,1.4,0,2.2,0c-0.4-2.7-0.8-5.3-1.2-8
+								c-1,0-2,0-3,0c-0.4,2.7-0.7,5.3-1.1,8C42.9,32.9,43.6,32.9,44.3,32.9z M44.7,27.5c0.5,1.9,0.5,2.4-0.2,2.6
+								C44.5,29.1,44.6,28.3,44.7,27.5z" />
+                        <path fill="#020202" d="M84.4,31.6c0.3,0,0.5,0,0.8,0c0,0.4,0.1,0.8,0.1,1.3c0.8,0,1.4,0,2.2,0c-0.4-2.7-0.8-5.3-1.2-8
+								c-0.9,0-1.8,0-2.6,0c-0.2,0-0.5,0.3-0.5,0.4c-0.4,2.5-0.7,5-1,7.6c0.7,0,1.4,0,2.2,0C84.3,32.4,84.4,32,84.4,31.6z M84.7,27.4
+								c0.4,2.5,0.4,2.5-0.2,2.5C84.5,29.1,84.6,28.3,84.7,27.4z" />
+                        <path fill="#020202" d="M109.3,32.8c0.9,0.3,1.9,0.4,2.8-0.1c1.2-0.7,1-1.9,1-3c-0.7,0-1.4,0-2,0c-0.2,1.8-0.2,1.8-0.7,1.8
+								c-0.3-1.5-0.2-5,0.5-5.6c0.1,0.9,0.1,1.7,0.2,2.4c0.7,0,1.3,0,2.2,0c-0.2-1.1-0.2-2.2-0.7-2.9c-0.7-0.9-1.9-0.9-3-0.6
+								c-1,0.3-1.4,0.9-1.4,2.1c0,1.3,0,2.6,0,3.9C108.2,31.7,108.5,32.5,109.3,32.8z" />
+                        <path fill="#020202" d="M122.9,31.3c-0.5,0-0.9-0.1-1.4-0.1c0-0.6,0-1.1,0-1.7c0.4,0,0.8-0.1,1.2-0.1c0.2-1.4,0.2-1.4-1.1-1.6
+								c0-0.4,0-0.9,0-1.4c0.4,0,0.8,0,1.2-0.1c0.1-0.5,0.1-1,0.2-1.5c-1.2,0-2.4,0-3.6,0c0,2.7,0,5.3,0,7.9c1.3,0,2.5,0,3.6,0
+								C122.9,32.3,122.9,31.8,122.9,31.3z" />
+                        <path fill="#020202" d="M91.9,32.8c0.6,0.1,1.2,0.1,1.8,0.1c0.1,0,0.3-0.6,0.3-0.9c0-0.8,0-1.7,0-2.5c0.4,0,0.8-0.1,1.2-0.1
+								c0-0.5,0-0.9,0-1.4c-0.4,0-0.7,0-1.2-0.1c0-0.5,0-1,0-1.5c0.5,0,0.9,0,1.4,0c0-0.5,0-1,0-1.5c-1.2,0-2.3,0-3.6,0c0,2.5,0,5,0,7.4
+								C91.8,32.5,91.8,32.8,91.9,32.8z" />
+                        <path fill="#020202" d="M38.8,26.6c0,1.6,0,3.1,0,4.6c0,2.2-0.3,1.8,1.9,1.8c0.1,0,0.1,0,0.3-0.1c0-2.1,0-4.2,0-6.3
+								c1.3-0.1,1.3-0.2,1-1.6c-1.5,0-2.9,0-4.4,0c0,0.5,0,1,0,1.5C38,26.5,38.4,26.5,38.8,26.6z" />
+                        <path fill="#020202" d="M88.9,33c0.9,0.1,1.1-0.2,1.1-1.1c-0.1-0.8,0-1.6,0-2.4c0.5,0,0.9,0,1.2-0.1c0-0.5,0-0.9,0-1.4
+								c-0.4,0-0.8-0.1-1.2-0.1c0-0.5,0-0.9,0-1.4c0.5,0,0.9-0.1,1.4-0.1c0-0.5,0-1,0-1.5c-1.2,0-2.3,0-3.5,0c0,2.7,0,5.3,0,8
+								C88.1,33,88.5,32.9,88.9,33z" />
+                        <path fill="#020202" d="M99.7,32.9c0.7,0,1.4,0,2,0c0-0.2,0-0.3,0-0.5c0-1.7,0-3.4,0-5.1c0-0.6,0.1-0.9,0.8-0.9
+								c0.2,0,0.5-0.3,0.5-0.6c0.1-0.3,0-0.6,0-0.9c-1.6,0-3.2,0-4.7,0c0,0.5,0,1,0,1.5c0.4,0,0.8,0.1,1.2,0.1
+								C99.7,28.7,99.7,30.8,99.7,32.9z" />
+                        <path fill="#020202" d="M98,24.9c-0.4,0-0.6,0-0.9,0c-1.3,0-1.3,0-1.3,1.2c0,1.9,0,3.9,0,5.8c0,0.3,0,0.7,0,1c0.8,0,1.5,0,2.2,0
+								C98,30.3,98,27.6,98,24.9z" />
+                        <path fill="#020202" d="M49.9,24.9c-0.7,0-1.4,0-2.1,0c0,2.7,0,5.3,0,8c0.7,0,1.3,0,2.1,0C49.9,30.3,49.9,27.6,49.9,24.9z" />
+                        <path fill="#020202" d="M105.6,24.9c-0.7,0-1.4,0-2,0c0,2.7,0,5.3,0,8c0.7,0,1.4,0,2,0C105.6,30.2,105.6,27.6,105.6,24.9z" />
+                    </g>
+                </svg>
+            </h1>
+            <div class="ip-loader">
+                <svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+                    <path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"
+                    />
+                    <path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"
+                    />
+                </svg>
+            </div>
+        </header>
+        <!-- gotop -->
+        <div id="toptop">
+            <a href="#" class="toptop">Go Top</a>
+        </div>
 
-<!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark font-weight-bold sticky-top">
-    <a class="navbar-brand" href="escape_planx.html">ESCAPE PLAN X</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="escape_planx.html"> / Home /<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Studio.html">/ Studio /</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Media.html">/ Media /</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Member.html">/ Member /</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="MAP  IG.html">/ MAP IG /</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Connection.html">/ Connection /</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-<!-- 首頁BANNER -->
-<div id="plan_x_logo"></div>
-<div class="plan_x_new">
-  <p class="plan_x_new_news">News</p>
-    <!-- Swiper -->
-    <div class="swiper-container gallery-thumbs1 swiper-slide-top-width">
-        <div class="swiper-wrapper ">
-          <div class="swiper-slide swiper-slide-top-width">
-            <div class="title" >逃亡計劃</div>
-            <div class="subtitle">Escape PLAN ''X''</div>
-            <div class="text">
-                <br>
-                <br>
-              <p>
-                  2014創立於台中。
-                <br>
-                  我們的計劃，不許失敗 我們的理性，不會逃亡
-                  <br>
-                  如果說 靈感的源頭是自由 作畫的初衷是夢想
-                  <br>
-                  那我說，你一定得看看我們的 逃亡計劃。
-              </p>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark font-weight-bold sticky-top">
+            <a class="navbar-brand" href="escape_planx.html">ESCAPE PLAN X</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="escape_planx.html"> / Home /
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Studio.html">/ Studio /</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Media.html">/ Media /</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Member.html">/ Member /</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MAP  IG.html">/ MAP IG /</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Connection.html">/ Connection /</a>
+                    </li>
+                </ul>
             </div>
-          </div>
-          <div class="swiper-slide swiper-slide-top-width">
-            <div class="title">荒煙漫草</div>
-            <div class="subtitle">Wild Tobacco</div>
-            <div class="text" >
-                <br>
-                <br>
-              <p>我們第一場在千越大樓舉辦的地下活動，在千越大樓6F舉辦
-                <br>
-                一場關於、噴漆、滑板、DJ的交流晚會，在這荒蕪的廢棄大樓
-                <br>
-                我們把這喚起從前的那份歲月熱情，在這酷炫的場合有種年輕
-                <br>
-                活力的感受，由音樂帶領我們屬於年輕族群的那份力量。
-                </p>
+        </nav>
+        <!-- 首頁BANNER -->
+        <div id="plan_x_logo"></div>
+        <div class="plan_x_new">
+            <p class="plan_x_new_news">News</p>
+            <!-- Swiper -->
+            <div class="swiper-container gallery-thumbs1 swiper-slide-top-width">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide swiper-slide-top-width">
+                        <div class="title">逃亡計劃</div>
+                        <div class="subtitle">Escape PLAN ''X''</div>
+                        <div class="text">
+                            <br>
+                            <br>
+                            <p>
+                                2014創立於台中。
+                                <br> 我們的計劃，不許失敗 我們的理性，不會逃亡
+                                <br> 如果說 靈感的源頭是自由 作畫的初衷是夢想
+                                <br> 那我說，你一定得看看我們的 逃亡計劃。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-top-width">
+                        <div class="title">荒煙漫草</div>
+                        <div class="subtitle">Wild Tobacco</div>
+                        <div class="text">
+                            <br>
+                            <br>
+                            <p>我們第一場在千越大樓舉辦的地下活動，在千越大樓6F舉辦
+                                <br> 一場關於、噴漆、滑板、DJ的交流晚會，在這荒蕪的廢棄大樓
+                                <br> 我們把這喚起從前的那份歲月熱情，在這酷炫的場合有種年輕
+                                <br> 活力的感受，由音樂帶領我們屬於年輕族群的那份力量。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-top-width">
+                        <div class="title">千越大樓</div>
+                        <div class="subtitle">關於進駐</div>
+                        <div class="text">
+                            <p>
+                                千越大樓的部分產權希望以年輕人為主的藝術方式來活化大樓
+                                <br> 並且與綠川的改建做搭配來增加觀光及實現藝術之都台中的可
+                                <br> 看性。
+                                <br> 而我們逃亡計劃是首批進入千越大樓的藝術團隊，現在千越大
+                                <br> 樓已慢慢在整頓當中！
+                                <br> 千越大樓的復甦計劃是希望大家慢慢的能重視台中市舊城區，
+                                <br> 進而推動老台中市的美好！
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="swiper-slide swiper-slide-top-width">
-              <div class="title" >千越大樓</div>
-              <div class="subtitle">關於進駐</div>
-              <div class="text">
-                <p>
-                  千越大樓的部分產權希望以年輕人為主的藝術方式來活化大樓
-                  <br>
-                  並且與綠川的改建做搭配來增加觀光及實現藝術之都台中的可
-                  <br>
-                  看性。
-                  <br>
-                  而我們逃亡計劃是首批進入千越大樓的藝術團隊，現在千越大
-                  <br>
-                  樓已慢慢在整頓當中！
-                  <br>
-                  千越大樓的復甦計劃是希望大家慢慢的能重視台中市舊城區，
-                  <br>
-                  進而推動老台中市的美好！</p>
-              </div>
+
+        </div>
+
+
+        <!-- Swiper -->
+        <div class="swiper-container gallery-top1 ">
+            <div class="swiper-wrapper">
+                <div id="banner_img01" class="swiper-slide"></div>
+                <div id="banner_img02" class="swiper-slide"></div>
+                <div id="banner_img03" class="swiper-slide"></div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <!-- studio -->
+        <div class="studio_img">
+        </div>
+        <div class="p display-1 studio-p">/Studio/</div>
+        <div data-aos="zoom-out-right" data-aos-duration="300" data-aos-anchor-placement="top-bottom">
+            <div class="facebook_fan">
+                <div id="fb-root"></div>
+                <script>(function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.11';
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
+                <div class="fb-page" data-href="https://www.facebook.com/escapeplanx/" data-tabs="timeline" data-width="500" data-small-header="true"
+                    data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/escapeplanx/" class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/escapeplanx/">逃亡計劃 Escape PLAN &#039;&#039;X&#039;&#039;</a>
+                    </blockquote>
+                </div>
             </div>
         </div>
-      </div>
-    
-</div>
-
-
- <!-- Swiper -->
- <div class="swiper-container gallery-top1">
-    <div class="swiper-wrapper">
-      <div id="banner_img01" class="swiper-slide"></div>
-      <div id="banner_img02" class="swiper-slide"></div>
-      <div id="banner_img03" class="swiper-slide"></div>
-    </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-  </div>
-
-  <div class="studio_img">
-    </div>
-    <div class="p display-1 studio-p">/Studio/</div>
-    <div class="facebook_fan">
-      <div id="fb-root"></div>
-      <script>(function (d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.11';
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-      <div class="fb-page" data-href="https://www.facebook.com/escapeplanx/" data-tabs="timeline" data-width="500" data-small-header="true"
-        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-        <blockquote cite="https://www.facebook.com/escapeplanx/" class="fb-xfbml-parse-ignore">
-          <a href="https://www.facebook.com/escapeplanx/">逃亡計劃 Escape PLAN &#039;&#039;X&#039;&#039;</a>
-        </blockquote>
-      </div>
-    </div>
-    <div class="story">
-      <h2 class="display-1 font-weight-bold">逃亡計劃塗鴉團隊</h2>
-      <p>經常在中部各地的牆上留下足跡，為了一面牆上的創作，經常需要透過縝密的規劃才能夠有辦法在夜晚創作，有時還得事先計劃逃亡的路線以便遇到警察的追補，後來團隊的藝術表現越來越被看見與受到肯定，開始從原本的街頭塗鴉轉變成受邀美化城市裡的不同空間，希望透過一系列有規劃性的塗鴉藝術創作，使台中市的市容不再單調而且擁有著能接納新銳都市藝術的視野，重新展現城市的不同面貌。</p>
-    </div>
-
-<!-- media -->
-<div class="home_media">
-    <iframe class="moviestyle"  src="https://www.youtube.com/embed/7RFiWJxHN8Y?rel=0&amp;showinfo=0" frameborder="0" gesture="media"
-    allow="encrypted-media" allowfullscreen></iframe>
-    <div class="home_media_a ">
-      <a href="" class="btn text-light btn-left" href="#" role="button"><h1 class="">More Plan"X" media</h1></a>
-    </div>
-</div>
-<!-- member -->
-<div class="p display-1 member-p">/Member/</div>
-<div class="member_bg_img">
-    <div class="member_all">
-        <div class="container">
-
-            <div class="col-12 p-0 m-0" style="height: 100px"></div>
-          <div class="row" style=" box-shadow:0px 0px 50px 10px rgba(31, 30, 30, 1);">
-            
-            <div class="theshadow" ></div>
-              <div class="col-12 p-0 m-0" style="height: 200px">
-                      <button type="button" class="product_top" data-toggle="modal" data-target=".bd-example-modal-lg">
-                              
-                      </button>
-              </div>
-            <div id="member_img" class="member_img1 col-md">
-              <!-- robot -->
-              <button type="button" class="product" data-toggle="modal" data-target=".bd-example-modal-lg-robot">
-                  <div class="product_robot"></div>
-              </button>
-      
-              <div class="modal fade bd-example-modal-lg-robot" id="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-lg" style="margin-top: 150px;">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                              </button>
-                          </div>
-      
-                          <div class="modal-body">
-      
-                                  <div class="swiper-container gallery-top swiper-slide-important-top">
-                                      <div class="swiper-wrapper swiper-slide-important-top">
-                                          <!-- 縮圖 -->
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/robot/robot001.png" alt="">
-                                          </div>
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/robot/robot002.png" alt="">
-                                          </div>
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/robot/robot003.png" alt="">
-                                          </div> 
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/robot/robot004.png" alt="">
-                                          </div> 
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/robot/robot005.png" alt="">
-                                          </div> 
-                                                  
-                                      </div>
-                                  </div>
-                                  <div class="cake_text">
-                                      <p><h3>ROBOT</h3><h4>NT$300(蛋奶素)</h4>檸檬奶油餡與生乳酪構成雙重夾餡，酸酸甜甜雙重享受，荷蘭菲仕蘭奶油製作塔皮，讓口感更酥脆可口。<h5>規格</h5>八吋蛋糕，蛋奶素，直徑約19公分(±1公分)<h5>備註</h5>所有蛋糕產品皆以冷凍保鮮，若蛋糕上方有白色結霜、或者內餡有碎冰皆屬正常現象，稍為退冰後即可，請安心食用。</p>
-                                  </div>
-      
-                          </div>
-                                              
-                          <div class="modal-footer">
-                              <!-- Swiper -->
-                              <!-- 選項 -->
-                              <div class="swiper-container gallery-thumbs swiper-slide-important">
-                                  <div class="swiper-wrapper swiper-wrapper-important">
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/robot/robot001-100.png" alt="">
-                                      </div>
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/robot/robot002-100.png" alt="">
-                                      </div>
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/robot/robot003-100.png" alt="">
-                                      </div>  
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/robot/robot004-100.png" alt="">
-                                      </div>
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/robot/robot005-100.png" alt="">
-                                      </div>  
-                                  </div>
-                              </div>    
-                          </div>
-                      </div>
-                  </div>
-              </div>
+        <div data-aos="zoom-out-left" data-aos-duration="300" data-aos-anchor-placement="top-bottom">
+            <div class="story">
+                <h2 class="display-1 font-weight-bold">逃亡計劃塗鴉團隊</h2>
+                <p>經常在中部各地的牆上留下足跡，為了一面牆上的創作，經常需要透過縝密的規劃才能夠有辦法在夜晚創作，有時還得事先計劃逃亡的路線以便遇到警察的追補，後來團隊的藝術表現越來越被看見與受到肯定，開始從原本的街頭塗鴉轉變成受邀美化城市裡的不同空間，希望透過一系列有規劃性的塗鴉藝術創作，使台中市的市容不再單調而且擁有著能接納新銳都市藝術的視野，重新展現城市的不同面貌。</p>
             </div>
-            <div id="member_img" class="member_img2 col-md">
-              <!-- hank -->
-              <button type="button" class="product" data-toggle="modal" data-target=".bd-example-modal-lg-hank">
-                  <div class="product_hank"></div>
-              </button>
-              <div class="modal fade bd-example-modal-lg-hank" id="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-lg" style="margin-top: 150px;">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                              </button>
-                          </div>
-      
-                          <div class="modal-body">
-      
-                                  <div class="swiper-container gallery-top swiper-slide-important-top">
-                                      <div class="swiper-wrapper swiper-slide-important-top">
-                                          <!-- 縮圖 -->
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/hank/hank001.png" alt="">
-                                          </div>
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/hank/hank002.png" alt="">
-                                          </div>
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/hank/hank003.png" alt="">
-                                          </div> 
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/hank/hank004.png" alt="">
-                                          </div> 
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/hank/hank005.png" alt="">
-                                          </div> 
-                                                  
-                                      </div>
-                                  </div>
-                                  <div class="cake_text">
-                                      <p><h3>ROBOT</h3><h4>NT$300(蛋奶素)</h4>檸檬奶油餡與生乳酪構成雙重夾餡，酸酸甜甜雙重享受，荷蘭菲仕蘭奶油製作塔皮，讓口感更酥脆可口。<h5>規格</h5>八吋蛋糕，蛋奶素，直徑約19公分(±1公分)<h5>備註</h5>所有蛋糕產品皆以冷凍保鮮，若蛋糕上方有白色結霜、或者內餡有碎冰皆屬正常現象，稍為退冰後即可，請安心食用。</p>
-                                  </div>
-      
-                          </div>
-                                              
-                          <div class="modal-footer">
-                              <!-- Swiper -->
-                              <!-- 選項 -->
-                              <div class="swiper-container gallery-thumbs swiper-slide-important">
-                                  <div class="swiper-wrapper swiper-wrapper-important">
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/hank/hank001-100.png" alt="">
-                                      </div>
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/hank/hank002-100.png" alt="">
-                                      </div>
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/hank/hank003-100.png" alt="">
-                                      </div>  
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/hank/hank004-100.png" alt="">
-                                      </div>
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/hank/hank005-100.png" alt="">
-                                      </div>  
-                                  </div>
-                              </div>    
-                          </div>
-                      </div>
-                  </div>
-              </div>
-      
-            </div>
-            <div id="member_img" class="member_img3 col-md">
-              <!-- matt -->
-              <button type="button" class="product" data-toggle="modal" data-target=".bd-example-modal-lg-matt">
-                  <div class="product_matt"></div>
-              </button>
-              <div class="modal fade bd-example-modal-lg-matt" id="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-lg" style="margin-top: 150px;">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                              </button>
-                          </div>
-      
-                          <div class="modal-body">
-      
-                                  <div class="swiper-container gallery-top swiper-slide-important-top">
-                                      <div class="swiper-wrapper swiper-slide-important-top">
-                                          <!-- 縮圖 -->
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/matt/matt001.png" alt="">
-                                          </div>
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/matt/matt002.png" alt="">
-                                          </div>
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/matt/matt003.png" alt="">
-                                          </div> 
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/matt/matt004.png" alt="">
-                                          </div> 
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/matt/matt005.png" alt="">
-                                          </div> 
-                                                  
-                                      </div>
-                                  </div>
-                                  <div class="cake_text">
-                                      <p><h3>ROBOT</h3><h4>NT$300(蛋奶素)</h4>檸檬奶油餡與生乳酪構成雙重夾餡，酸酸甜甜雙重享受，荷蘭菲仕蘭奶油製作塔皮，讓口感更酥脆可口。<h5>規格</h5>八吋蛋糕，蛋奶素，直徑約19公分(±1公分)<h5>備註</h5>所有蛋糕產品皆以冷凍保鮮，若蛋糕上方有白色結霜、或者內餡有碎冰皆屬正常現象，稍為退冰後即可，請安心食用。</p>
-                                  </div>
-      
-                          </div>
-                                              
-                          <div class="modal-footer">
-                              <!-- Swiper -->
-                              <!-- 選項 -->
-                              <div class="swiper-container gallery-thumbs swiper-slide-important">
-                                  <div class="swiper-wrapper swiper-wrapper-important">
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/matt/matt001-100.png" alt="">
-                                      </div>
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/matt/matt002-100.png" alt="">
-                                      </div>
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/matt/matt003-100.png" alt="">
-                                      </div>  
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/matt/matt004-100.png" alt="">
-                                      </div>
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/matt/matt005-100.png" alt="">
-                                      </div>  
-                                  </div>
-                              </div>    
-                          </div>
-                      </div>
-                  </div>
-              </div>
-      
-      
-              
-            </div>
-            <div id="member_img" class="member_img4 col-md">
-              <!-- dasbe -->
-              <button type="button" class="product" data-toggle="modal" data-target=".bd-example-modal-lg-dasbe">
-                  <div class="product_dasbe"></div>
-              </button>
-              <div class="modal fade bd-example-modal-lg-dasbe" id="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-lg" style="margin-top: 150px;">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                              </button>
-                          </div>
-      
-                          <div class="modal-body">
-      <!-- 縮圖 -->
-                                  <div class="swiper-container gallery-top swiper-slide-important-top">
-                                      <div class="swiper-wrapper swiper-slide-important-top">
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/dasbe/dasbe001.png" alt="">
-                                          </div>
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/dasbe/dasbe002.png" alt="">
-                                          </div>
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/dasbe/dasbe003.png" alt="">
-                                          </div> 
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/dasbe/dasbe004.png" alt="">
-                                          </div> 
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/dasbe/dasbe005.png" alt="">
-                                          </div> 
-                                                  
-                                      </div>
-                                  </div>
-                                  <div class="cake_text">
-                                      <p><h3>ROBOT</h3><h4>NT$300(蛋奶素)</h4>檸檬奶油餡與生乳酪構成雙重夾餡，酸酸甜甜雙重享受，荷蘭菲仕蘭奶油製作塔皮，讓口感更酥脆可口。<h5>規格</h5>八吋蛋糕，蛋奶素，直徑約19公分(±1公分)<h5>備註</h5>所有蛋糕產品皆以冷凍保鮮，若蛋糕上方有白色結霜、或者內餡有碎冰皆屬正常現象，稍為退冰後即可，請安心食用。</p>
-                                  </div>
-      
-                          </div>
-                                              
-                          <div class="modal-footer">
-                              <!-- Swiper -->
-                              <!-- 選項 -->
-                              <div class="swiper-container gallery-thumbs swiper-slide-important">
-                                  <div class="swiper-wrapper swiper-wrapper-important">
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/dasbe/dasbe001-100.png" alt="">
-                                      </div>
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/dasbe/dasbe002-100.png" alt="">
-                                      </div>
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/dasbe/dasbe003-100.png" alt="">
-                                      </div>  
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/dasbe/dasbe004-100.png" alt="">
-                                      </div>
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/dasbe/dasbe005-100.png" alt="">
-                                      </div>  
-                                  </div>
-                              </div>    
-                          </div>
-                      </div>
-                  </div>
-              </div>        
-            </div>
-            <div id="member_img" class="member_img5 col-md">
-              <!-- stewart -->
-              <button type="button" class="product" data-toggle="modal" data-target=".bd-example-modal-lg-stewart">
-                  <div class="product_stewart"></div>
-              </button>
-              <div class="modal fade bd-example-modal-lg-stewart" id="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-lg" style="margin-top: 150px;">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                              </button>
-                          </div>
-      
-                          <div class="modal-body">
-      
-                                  <div class="swiper-container gallery-top swiper-slide-important-top">
-                                      <div class="swiper-wrapper swiper-slide-important-top">
-                                          <!-- 縮圖 -->
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/stewart/stewart001.png" alt="">
-                                          </div>
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/stewart/stewart002.png" alt="">
-                                          </div>
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/stewart/stewart003.png" alt="">
-                                          </div> 
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/stewart/stewart004.png" alt="">
-                                          </div> 
-                                          <div class="swiper-slide swiper-slide-important-top">
-                                              <img width="415px" height="415px" src="img/stewart/stewart005.png" alt="">
-                                          </div> 
-                                                  
-                                      </div>
-                                  </div>
-                                  <div class="cake_text">
-                                      <p><h3>ROBOT</h3><h4>NT$300(蛋奶素)</h4>檸檬奶油餡與生乳酪構成雙重夾餡，酸酸甜甜雙重享受，荷蘭菲仕蘭奶油製作塔皮，讓口感更酥脆可口。<h5>規格</h5>八吋蛋糕，蛋奶素，直徑約19公分(±1公分)<h5>備註</h5>所有蛋糕產品皆以冷凍保鮮，若蛋糕上方有白色結霜、或者內餡有碎冰皆屬正常現象，稍為退冰後即可，請安心食用。</p>
-                                  </div>
-      
-                          </div>
-                                              
-                          <div class="modal-footer">
-                              <!-- Swiper -->
-                              <!-- 選項 -->
-                              <div class="swiper-container gallery-thumbs swiper-slide-important">
-                                  <div class="swiper-wrapper swiper-wrapper-important">
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/stewart/stewart001-100.png" alt="">
-                                      </div>
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/stewart/stewart002-100.png" alt="">
-                                      </div>
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/stewart/stewart003-100.png" alt="">
-                                      </div>  
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/stewart/stewart004-100.png" alt="">
-                                      </div>
-                                      <div class="swiper-slide swiper-slide-important">
-                                          <img width="100px" height="100px" src="img/stewart/stewart005-100.png" alt="">
-                                      </div>  
-                                  </div>
-                              </div>    
-                          </div>
-                      </div>
-                  </div>
-              </div>        
-            </div>
-          </div>
-          <div class="col-12 p-0 m-0" style="height: 90px"></div>
         </div>
-</div>
-<!-- map -->
-<div class="mp_ig_img">
-    <div class="container">
-      <h1>MAP</h1>
-      <div id="map"></div>
+        <!-- media -->
+        <div class="home_media">
+            <iframe class="moviestyle" src="https://www.youtube.com/embed/7RFiWJxHN8Y?rel=0&amp;showinfo=0" frameborder="0" gesture="media"
+                allow="encrypted-media" allowfullscreen></iframe>
+            <div class="home_media_a ">
+                <a href="" class="btn text-light btn-left" href="#" role="button">
+                    <h1 class="">More Plan"X" media</h1>
+                </a>
+            </div>
+        </div>
+        <!-- member -->
+        <div class="p display-1 member-p">/Member/</div>
+        <div class="member_bg_img">
+            <div class="member_all">
+                <div class="container">
+
+                    <div class="col-12 p-0 m-0" style="height: 100px"></div>
+                    <div class="row" style=" box-shadow:0px 0px 50px 10px rgba(31, 30, 30, 1);">
+
+                        <div class="theshadow"></div>
+                        <div class="col-12 p-0 m-0" style="height: 200px">
+                            <button type="button" class="product_top" data-toggle="modal" data-target=".bd-example-modal-lg">
+
+                            </button>
+                        </div>
+                        <div id="member_img" class="member_img1 col-md">
+                            <!-- robot -->
+                            <button type="button" class="product" data-toggle="modal" data-target=".bd-example-modal-lg-robot">
+                                <div class="product_robot"></div>
+                            </button>
+
+                            <div class="modal fade bd-example-modal-lg-robot" id="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg" style="margin-top: 150px;">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+
+                                            <div class="swiper-container gallery-top swiper-slide-important-top">
+                                                <div class="swiper-wrapper swiper-slide-important-top">
+                                                    <!-- 縮圖 -->
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/robot/robot001.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/robot/robot002.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/robot/robot003.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/robot/robot004.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/robot/robot005.png" alt="">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="cake_text">
+                                                <p>
+                                                    <h3>ROBOT</h3>
+                                                    <h4>NT$300(蛋奶素)</h4>檸檬奶油餡與生乳酪構成雙重夾餡，酸酸甜甜雙重享受，荷蘭菲仕蘭奶油製作塔皮，讓口感更酥脆可口。
+                                                    <h5>規格</h5>八吋蛋糕，蛋奶素，直徑約19公分(±1公分)
+                                                    <h5>備註</h5>所有蛋糕產品皆以冷凍保鮮，若蛋糕上方有白色結霜、或者內餡有碎冰皆屬正常現象，稍為退冰後即可，請安心食用。</p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <!-- Swiper -->
+                                            <!-- 選項 -->
+                                            <div class="swiper-container gallery-thumbs swiper-slide-important">
+                                                <div class="swiper-wrapper swiper-wrapper-important">
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/robot/robot001-100.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/robot/robot002-100.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/robot/robot003-100.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/robot/robot004-100.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/robot/robot005-100.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="member_img" class="member_img2 col-md">
+                            <!-- hank -->
+                            <button type="button" class="product" data-toggle="modal" data-target=".bd-example-modal-lg-hank">
+                                <div class="product_hank"></div>
+                            </button>
+                            <div class="modal fade bd-example-modal-lg-hank" id="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg" style="margin-top: 150px;">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+
+                                            <div class="swiper-container gallery-top swiper-slide-important-top">
+                                                <div class="swiper-wrapper swiper-slide-important-top">
+                                                    <!-- 縮圖 -->
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/hank/hank001.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/hank/hank002.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/hank/hank003.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/hank/hank004.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/hank/hank005.png" alt="">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="cake_text">
+                                                <p>
+                                                    <h3>ROBOT</h3>
+                                                    <h4>NT$300(蛋奶素)</h4>檸檬奶油餡與生乳酪構成雙重夾餡，酸酸甜甜雙重享受，荷蘭菲仕蘭奶油製作塔皮，讓口感更酥脆可口。
+                                                    <h5>規格</h5>八吋蛋糕，蛋奶素，直徑約19公分(±1公分)
+                                                    <h5>備註</h5>所有蛋糕產品皆以冷凍保鮮，若蛋糕上方有白色結霜、或者內餡有碎冰皆屬正常現象，稍為退冰後即可，請安心食用。</p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <!-- Swiper -->
+                                            <!-- 選項 -->
+                                            <div class="swiper-container gallery-thumbs swiper-slide-important">
+                                                <div class="swiper-wrapper swiper-wrapper-important">
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/hank/hank001-100.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/hank/hank002-100.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/hank/hank003-100.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/hank/hank004-100.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/hank/hank005-100.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="member_img" class="member_img3 col-md">
+                            <!-- matt -->
+                            <button type="button" class="product" data-toggle="modal" data-target=".bd-example-modal-lg-matt">
+                                <div class="product_matt"></div>
+                            </button>
+                            <div class="modal fade bd-example-modal-lg-matt" id="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg" style="margin-top: 150px;">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+
+                                            <div class="swiper-container gallery-top swiper-slide-important-top">
+                                                <div class="swiper-wrapper swiper-slide-important-top">
+                                                    <!-- 縮圖 -->
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/matt/matt001.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/matt/matt002.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/matt/matt003.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/matt/matt004.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/matt/matt005.png" alt="">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="cake_text">
+                                                <p>
+                                                    <h3>ROBOT</h3>
+                                                    <h4>NT$300(蛋奶素)</h4>檸檬奶油餡與生乳酪構成雙重夾餡，酸酸甜甜雙重享受，荷蘭菲仕蘭奶油製作塔皮，讓口感更酥脆可口。
+                                                    <h5>規格</h5>八吋蛋糕，蛋奶素，直徑約19公分(±1公分)
+                                                    <h5>備註</h5>所有蛋糕產品皆以冷凍保鮮，若蛋糕上方有白色結霜、或者內餡有碎冰皆屬正常現象，稍為退冰後即可，請安心食用。</p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <!-- Swiper -->
+                                            <!-- 選項 -->
+                                            <div class="swiper-container gallery-thumbs swiper-slide-important">
+                                                <div class="swiper-wrapper swiper-wrapper-important">
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/matt/matt001-100.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/matt/matt002-100.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/matt/matt003-100.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/matt/matt004-100.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/matt/matt005-100.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div id="member_img" class="member_img4 col-md">
+                            <!-- dasbe -->
+                            <button type="button" class="product" data-toggle="modal" data-target=".bd-example-modal-lg-dasbe">
+                                <div class="product_dasbe"></div>
+                            </button>
+                            <div class="modal fade bd-example-modal-lg-dasbe" id="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg" style="margin-top: 150px;">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <!-- 縮圖 -->
+                                            <div class="swiper-container gallery-top swiper-slide-important-top">
+                                                <div class="swiper-wrapper swiper-slide-important-top">
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/dasbe/dasbe001.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/dasbe/dasbe002.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/dasbe/dasbe003.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/dasbe/dasbe004.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/dasbe/dasbe005.png" alt="">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="cake_text">
+                                                <p>
+                                                    <h3>ROBOT</h3>
+                                                    <h4>NT$300(蛋奶素)</h4>檸檬奶油餡與生乳酪構成雙重夾餡，酸酸甜甜雙重享受，荷蘭菲仕蘭奶油製作塔皮，讓口感更酥脆可口。
+                                                    <h5>規格</h5>八吋蛋糕，蛋奶素，直徑約19公分(±1公分)
+                                                    <h5>備註</h5>所有蛋糕產品皆以冷凍保鮮，若蛋糕上方有白色結霜、或者內餡有碎冰皆屬正常現象，稍為退冰後即可，請安心食用。</p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <!-- Swiper -->
+                                            <!-- 選項 -->
+                                            <div class="swiper-container gallery-thumbs swiper-slide-important">
+                                                <div class="swiper-wrapper swiper-wrapper-important">
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/dasbe/dasbe001-100.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/dasbe/dasbe002-100.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/dasbe/dasbe003-100.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/dasbe/dasbe004-100.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/dasbe/dasbe005-100.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="member_img" class="member_img5 col-md">
+                            <!-- stewart -->
+                            <button type="button" class="product" data-toggle="modal" data-target=".bd-example-modal-lg-stewart">
+                                <div class="product_stewart"></div>
+                            </button>
+                            <div class="modal fade bd-example-modal-lg-stewart" id="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg" style="margin-top: 150px;">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+
+                                            <div class="swiper-container gallery-top swiper-slide-important-top">
+                                                <div class="swiper-wrapper swiper-slide-important-top">
+                                                    <!-- 縮圖 -->
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/stewart/stewart001.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/stewart/stewart002.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/stewart/stewart003.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/stewart/stewart004.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important-top">
+                                                        <img width="415px" height="415px" src="css/img/stewart/stewart005.png" alt="">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="cake_text">
+                                                <p>
+                                                    <h3>ROBOT</h3>
+                                                    <h4>NT$300(蛋奶素)</h4>檸檬奶油餡與生乳酪構成雙重夾餡，酸酸甜甜雙重享受，荷蘭菲仕蘭奶油製作塔皮，讓口感更酥脆可口。
+                                                    <h5>規格</h5>八吋蛋糕，蛋奶素，直徑約19公分(±1公分)
+                                                    <h5>備註</h5>所有蛋糕產品皆以冷凍保鮮，若蛋糕上方有白色結霜、或者內餡有碎冰皆屬正常現象，稍為退冰後即可，請安心食用。</p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <!-- Swiper -->
+                                            <!-- 選項 -->
+                                            <div class="swiper-container gallery-thumbs swiper-slide-important">
+                                                <div class="swiper-wrapper swiper-wrapper-important">
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/stewart/stewart001-100.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/stewart/stewart002-100.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/stewart/stewart003-100.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/stewart/stewart004-100.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-important">
+                                                        <img width="100px" height="100px" src="css/img/stewart/stewart005-100.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 p-0 m-0" style="height: 90px"></div>
+                </div>
+            </div>
+        </div>
+        <!-- map -->
+        <div class="mp_ig_img">
+            <div class="container">
+                <h1>MAP</h1>
+                <div id="map"></div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footerimg">
+            <div class="footer_box"></div>
+        </div>
     </div>
-  </div>
-<!-- footer -->
-<div class="footerimg">
-  <div class="footer_box"></div>
-</div>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-<script src="js/swiper.min.js"></script>
+    <!-- fb message -->
 
-<script>
-    var galleryTop = [];
-    var galleryThumbs = [];
+    <div class="fb-livechat">
+        <div class="ctrlq fb-overlay"></div>
+        <div class="fb-widget">
+            <div class="ctrlq fb-close"></div>
+            <div class="fb-page" data-href="https://www.facebook.com/escapeplanx/" data-tabs="messages" data-width="360" data-height="400"
+                data-small-header="true" data-hide-cover="true" data-show-facepile="false">
+                <blockquote cite="https://www.facebook.com/escapeplanx/" class="fb-xfbml-parse-ignore"> </blockquote>
+            </div>
+            <div class="fb-credit">
+                <a href="https://www.labnol.org/software/facebook-messenger-chat-widget/9583/" target="_blank">Facebook Chat Widget by Digital Inspiration</a>
+            </div>
+            <div id="fb-root"></div>
+        </div>
+        <a href="https://m.me/digital.inspiration" title="Send us a message on Facebook" class="ctrlq fb-button"></a>
+    </div>
 
-    $(".gallery-top").each(function (index, element) {
-      var $this = $(this);
-      galleryTop.push(new Swiper(this, {
-        spaceBetween: 2,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        effect: 'fade',
-        fade: {
-          crossFade: false,
+    <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9"></script>   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/pathLoader.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/facebook.js"></script>
+
+    <script>
+        var galleryTop = [];
+        var galleryThumbs = [];
+
+        $(".gallery-top").each(function (index, element) {
+            var $this = $(this);
+            galleryTop.push(new Swiper(this, {
+                spaceBetween: 2,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                effect: 'fade',
+                fade: {
+                    crossFade: false,
+                }
+
+            }));
+        });
+
+        $(".gallery-thumbs").each(function (index, element) {
+            var $this = $(this);
+            galleryThumbs.push(new Swiper(this, {
+                spaceBetween: 30,
+                centeredSlides: true,
+                slidesPerView: 3,
+                touchRatio: 0.5,
+                slideToClickedSlide: true,
+            }));
+        });
+
+        for (var i = 0; i < galleryTop.length; i++) {
+            galleryTop[i].controller.control = galleryThumbs[i];
+            galleryThumbs[i].controller.control = galleryTop[i];
         }
 
-      }));
-    });
-
-    $(".gallery-thumbs").each(function (index, element) {
-      var $this = $(this);
-      galleryThumbs.push(new Swiper(this, {
-        spaceBetween: 30,
-        centeredSlides: true,
-        slidesPerView: 3,
-        touchRatio: 0.5,
-        slideToClickedSlide: true,
-      }));
-    });
-
-    for (var i = 0; i < galleryTop.length; i++) {
-      galleryTop[i].controller.control = galleryThumbs[i];
-      galleryThumbs[i].controller.control = galleryTop[i];
-    }
-
-    $('.modal').on('shown.bs.modal', function (e) {
-      for (var i = 0; i < galleryTop.length; i++) {
-        galleryTop[i].update();
-        galleryThumbs[i].update();
-      }
-    })
+        $('.modal').on('shown.bs.modal', function (e) {
+            for (var i = 0; i < galleryTop.length; i++) {
+                galleryTop[i].update();
+                galleryThumbs[i].update();
+            }
+        })
 
 
-  </script>
+    </script>
 
-<script>
-    var galleryTop1 = [];
-    var galleryThumbs1 = [];
+    <script>
+        var galleryTop1 = [];
+        var galleryThumbs1 = [];
 
-    $(".gallery-top1").each(function (index, element) {
-      var $this = $(this);
-      galleryTop1.push(new Swiper(this, {
-        spaceBetween: 2,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        effect: 'fade',
-        fade: {
-          crossFade: false,
+        $(".gallery-top1").each(function (index, element) {
+            var $this = $(this);
+            galleryTop1.push(new Swiper(this, {
+                spaceBetween: 2,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                effect: 'fade',
+                fade: {
+                    crossFade: false,
+                }
+
+            }));
+        });
+
+        $(".gallery-thumbs1").each(function (index, element) {
+            var $this = $(this);
+            galleryThumbs1.push(new Swiper(this, {
+                spaceBetween: 30,
+                centeredSlides: true,
+                slidesPerView: 1,
+                touchRatio: 0.5,
+                slideToClickedSlide: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+            }));
+        });
+
+        for (var i = 0; i < galleryTop1.length; i++) {
+            galleryTop1[i].controller.control = galleryThumbs1[i];
+            galleryThumbs1[i].controller.control = galleryTop1[i];
         }
 
-      }));
-    });
-
-    $(".gallery-thumbs1").each(function (index, element) {
-      var $this = $(this);
-      galleryThumbs1.push(new Swiper(this, {
-        spaceBetween: 30,
-        centeredSlides: true,
-        slidesPerView: 1,
-        touchRatio: 0.5,
-        slideToClickedSlide: true,
-        autoplay: {
-        delay: 10000,
-        disableOnInteraction: false,
-        },
-      }));
-    });
-
-    for (var i = 0; i < galleryTop1.length; i++) {
-      galleryTop1[i].controller.control = galleryThumbs1[i];
-      galleryThumbs1[i].controller.control = galleryTop1[i];
-    }
-
-    $('.modal1').on('shown.bs.modal1', function (e) {
-      for (var i = 0; i < galleryTop1.length; i++) {
-        galleryTop1[i].update();
-        galleryThumbs1[i].update();
-      }
-    })
+        $('.modal1').on('shown.bs.modal1', function (e) {
+            for (var i = 0; i < galleryTop1.length; i++) {
+                galleryTop1[i].update();
+                galleryThumbs1[i].update();
+            }
+        })
 
 
-  </script>
-<script>
-    function initMap() {
-      // Styles a map in night mode.
-      var planx = { lat: 24.1383714, lng: 120.6832458 };
-      var map = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: 24.1387514, lng: 120.6832458 },
-        zoom: 18,
-        styles: [
-          { elementType: 'geometry', stylers: [{ color: '#242f3e' }] },
-          { elementType: 'labels.text.stroke', stylers: [{ color: '#242f3e' }] },
-          { elementType: 'labels.text.fill', stylers: [{ color: '#746855' }] },
-          {
-            featureType: 'administrative.locality',
-            elementType: 'labels.text.fill',
-            stylers: [{ color: '#d59563' }]
-          },
-          {
-            featureType: 'poi',
-            elementType: 'labels.text.fill',
-            stylers: [{ color: '#d59563' }]
-          },
-          {
-            featureType: 'poi.park',
-            elementType: 'geometry',
-            stylers: [{ color: '#263c3f' }]
-          },
-          {
-            featureType: 'poi.park',
-            elementType: 'labels.text.fill',
-            stylers: [{ color: '#6b9a76' }]
-          },
-          {
-            featureType: 'road',
-            elementType: 'geometry',
-            stylers: [{ color: '#38414e' }]
-          },
-          {
-            featureType: 'road',
-            elementType: 'geometry.stroke',
-            stylers: [{ color: '#212a37' }]
-          },
-          {
-            featureType: 'road',
-            elementType: 'labels.text.fill',
-            stylers: [{ color: '#9ca5b3' }]
-          },
-          {
-            featureType: 'road.highway',
-            elementType: 'geometry',
-            stylers: [{ color: '#746855' }]
-          },
-          {
-            featureType: 'road.highway',
-            elementType: 'geometry.stroke',
-            stylers: [{ color: '#1f2835' }]
-          },
-          {
-            featureType: 'road.highway',
-            elementType: 'labels.text.fill',
-            stylers: [{ color: '#f3d19c' }]
-          },
-          {
-            featureType: 'transit',
-            elementType: 'geometry',
-            stylers: [{ color: '#2f3948' }]
-          },
-          {
-            featureType: 'transit.station',
-            elementType: 'labels.text.fill',
-            stylers: [{ color: '#d59563' }]
-          },
-          {
-            featureType: 'water',
-            elementType: 'geometry',
-            stylers: [{ color: '#17263c' }]
-          },
-          {
-            featureType: 'water',
-            elementType: 'labels.text.fill',
-            stylers: [{ color: '#515c6d' }]
-          },
-          {
-            featureType: 'water',
-            elementType: 'labels.text.stroke',
-            stylers: [{ color: '#17263c' }]
-          }
-        ]
-      });
-      var marker = new google.maps.Marker({
-          position: planx,
-          map: map,
-          icon:'img/PLAN- X LOGO3.png'});
-          
-    }
-  </script>
+    </script>
+    <script>
+        function initMap() {
+            // Styles a map in night mode.
+            var planx = { lat: 24.1383714, lng: 120.6832458 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 24.1387514, lng: 120.6832458 },
+                zoom: 18,
+                styles: [
+                    { elementType: 'geometry', stylers: [{ color: '#242f3e' }] },
+                    { elementType: 'labels.text.stroke', stylers: [{ color: '#242f3e' }] },
+                    { elementType: 'labels.text.fill', stylers: [{ color: '#746855' }] },
+                    {
+                        featureType: 'administrative.locality',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#d59563' }]
+                    },
+                    {
+                        featureType: 'poi',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#d59563' }]
+                    },
+                    {
+                        featureType: 'poi.park',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#263c3f' }]
+                    },
+                    {
+                        featureType: 'poi.park',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#6b9a76' }]
+                    },
+                    {
+                        featureType: 'road',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#38414e' }]
+                    },
+                    {
+                        featureType: 'road',
+                        elementType: 'geometry.stroke',
+                        stylers: [{ color: '#212a37' }]
+                    },
+                    {
+                        featureType: 'road',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#9ca5b3' }]
+                    },
+                    {
+                        featureType: 'road.highway',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#746855' }]
+                    },
+                    {
+                        featureType: 'road.highway',
+                        elementType: 'geometry.stroke',
+                        stylers: [{ color: '#1f2835' }]
+                    },
+                    {
+                        featureType: 'road.highway',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#f3d19c' }]
+                    },
+                    {
+                        featureType: 'transit',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#2f3948' }]
+                    },
+                    {
+                        featureType: 'transit.station',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#d59563' }]
+                    },
+                    {
+                        featureType: 'water',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#17263c' }]
+                    },
+                    {
+                        featureType: 'water',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#515c6d' }]
+                    },
+                    {
+                        featureType: 'water',
+                        elementType: 'labels.text.stroke',
+                        stylers: [{ color: '#17263c' }]
+                    }
+                ]
+            });
+            var marker = new google.maps.Marker({
+                position: planx,
+                map: map,
+                icon: 'css/img/PLAN- X LOGO3.png'
+            });
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCrdovxl91QVG9ZYr4QWANifowNKtdhms&callback=initMap" async
-    defer></script>
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCrdovxl91QVG9ZYr4QWANifowNKtdhms&callback=initMap" async
+        defer></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+
+        $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop();
+            var top_height = $("#banner_img01").height();
+            if (scrollTop > top_height) {
+                $('.toptop').addClass("toptopshow");
+            } else {
+                $('.toptop').removeClass("toptopshow");
+            }
+        });
+    </script>
 
 </body>
 
