@@ -145,7 +145,7 @@
 
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark font-weight-bold sticky-top">
-            <a class="navbar-brand" href="escape_planx.html">ESCAPE PLAN X</a>
+            <a class="navbar-brand" href="#banner">ESCAPE PLAN X</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -154,7 +154,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="escape_planx.html"> / Home /
+                        <a class="nav-link" href="#banner"> / Home /
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
@@ -177,7 +177,7 @@
             </div>
         </nav>
         <!-- 首頁BANNER -->
-        <div class="banner">
+        <div id="banner" class="banner">
             <div id="plan_x_logo"></div>
             <div class="plan_x_new">
                 <p class="plan_x_new_news">News</p>
@@ -250,25 +250,6 @@
             </div>
             <div class="p display-1 studio-p">/Studio/</div>
 
-                <div class="facebook_fan">
-                    <div id="fb-root"></div>
-                    <script>(function (d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0];
-                            if (d.getElementById(id)) return;
-                            js = d.createElement(s); js.id = id;
-                            js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.11';
-                            fjs.parentNode.insertBefore(js, fjs);
-                        }(document, 'script', 'facebook-jssdk'));</script>
-                    <div class="fb-page" data-href="https://www.facebook.com/escapeplanx/" data-tabs="timeline" data-width="500" data-small-header="true"
-                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                        <blockquote cite="https://www.facebook.com/escapeplanx/" class="fb-xfbml-parse-ignore">
-                            <a href="https://www.facebook.com/escapeplanx/">逃亡計劃 Escape PLAN &#039;&#039;X&#039;&#039;</a>
-                        </blockquote>
-                    </div>
-                </div>
-
-
-
                 <div class="story">
                     <h2 class="display-1 font-weight-bold planxname">逃亡計劃塗鴉團隊</h2>
                     <p>經常在中部各地的牆上留下足跡，為了一面牆上的創作，經常需要透過縝密的規劃才能夠有辦法在夜晚創作，有時還得事先計劃逃亡的路線以便遇到警察的追補，後來團隊的藝術表現越來越被看見與受到肯定，開始從原本的街頭塗鴉轉變成受邀美化城市裡的不同空間，希望透過一系列有規劃性的塗鴉藝術創作，使台中市的市容不再單調而且擁有著能接納新銳都市藝術的視野，重新展現城市的不同面貌。</p>
@@ -280,7 +261,8 @@
                 <iframe class="moviestyle" src="https://www.youtube.com/embed/7RFiWJxHN8Y?rel=0&amp;showinfo=0" frameborder="0" gesture="media"
                     allow="encrypted-media" allowfullscreen></iframe>
                 <div class="home_media_a ">
-                    <a href="" class="btn text-light btn-left" href="/Media.html" role="button">
+
+                    <a href="Media.html" class="btn text-light btn-left" role="button">
                         <h1 class="">More Plan"X" media</h1>
                     </a>
                 </div>
@@ -697,7 +679,32 @@
             </div>
         </div>
         <!-- footer -->
-        <div class="connection"></div>
+        <div id="connection" class="connection">
+            <div class="container">
+                    <footer class="clearfix"><!--footer-->
+                        <div class="wrap b-box clearfix"><!--wrapIndex-->
+                            <div class="downLogo"><a href="/escape_planx.html" title="escape planx"><img src="/css/img/PLAN- X LOGO3.png" alt="escape planx"></a></div>
+                            <div class="row"><!--row-->
+                                <h5 class="copyright">
+                <p><em>地址</em>千越大樓5F 400台中市中區綠川西街113號  <em><br></em><a href="https://www.messenger.com/t/escapeplanx">聯絡我們<i class="fa fa-envelope-o"></a></p></h5>
+                            </div><!--row end-->
+
+                        </div><!--wrapIndex end-->
+                        <div class="copyrightBox"><!-- copyrightBox -->
+                            Escape Plan'X' 2017 © Copyright All Rights Reserved.
+                            <!--↓靜態-hifounder-->
+                            <div class="translateIbest"><!--translate&ibest-->
+                                <div class="design clearfix">
+                                    <span>
+                                        <a href="https://www.facebook.com/za.wu.5" target="_blank">網頁設計</a>‧<a href="https://www.facebook.com/za.wu.5" target="_blank">HIFOUDER</a>
+                                    </span>
+                                </div>
+                            </div><!--translate&ibest end-->
+                        </div><!-- copyrightBox end-->
+                    </footer><!--footer end-->
+                </div><!--outerWrap end-->
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -805,7 +812,6 @@
                 galleryThumbs1[i].update();
             }
         })
-
 
     </script>
     <script>

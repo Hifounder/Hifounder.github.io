@@ -170,16 +170,11 @@ body {
     height: calc(100vh - 56px);
 }
 
-.facebook_fan {
-    position: absolute;
-    width: 500px;
-    bottom: 60px;
-    left: 100px;
-}
+
 
 .story {
     width: 500px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 30px;
     color: white;
     position: absolute;
@@ -492,7 +487,8 @@ body {
 .mp_ig_img {
     background-image: url("img/mapimg.jpg");
     background-position: center;
-    background-position-y: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: calc(100vh - 56px);
     h1 {
@@ -505,6 +501,63 @@ body {
         height: 400px;
     }
 }
+/*頁尾資訊*/
+.connection{
+    background-color: rgb(0, 0, 0)
+}
+footer {
+	width: 100%;
+	padding: 75px 0 60px;
+	text-align: center;
+	overflow: hidden;
+}
+footer .downLogo {
+	margin-bottom: 20px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid rgba(82, 82, 82, 0.5);
+}
+.copyright{
+    margin: auto;
+}
+footer h5.copyright p {
+	display: inline-block;
+	color: #fff;
+	letter-spacing: .05em;
+	margin-bottom: 12px;
+}
+footer h5.copyright p a {
+	color: #fff;
+}
+footer h5.copyright p a:hover {
+	text-decoration: underline;
+}
+footer h5.copyright p em {
+	margin-right: 8px;
+	color: #888;
+}
+footer .copyrightBox {
+	margin-top: 80px;
+	color: #888;
+	font-size: 12px;
+}
+
+
+.translateIbest .design span {
+
+	display: block;
+	line-height: 22px;
+	font-size: 9pt;
+	color: #797979;
+}
+.translateIbest .design a {
+	color: #797979;
+	text-decoration: none;
+}
+.translateIbest .design a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+
 
 @media screen and (max-width:1200px)
 {
@@ -583,17 +636,16 @@ body {
         }
 
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:769px){
     #plan_x_logo{
         width: 150px;
         height: 150px;
         position: absolute;
-        left: 28%;
+        left: 50%;
         top: 5%;
+        transform: translate(-50%,0);
     }
-    .facebook_fan{
-        display: none;
-    }
+    
     .btn-left{
         padding: 20px 12px;
     }
@@ -604,6 +656,7 @@ body {
         top: 56px;
         width: auto;
         right: auto;
+        font-size: 4vw;
     }
     .planxname{
         font-size: 5rem;
