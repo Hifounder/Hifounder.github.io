@@ -179,7 +179,7 @@ body {
 
 .story {
     width: 500px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 30px;
     color: white;
     position: absolute;
@@ -597,6 +597,7 @@ body {
         right: 0;
     }
     .story{
+        top: 56px;
         width: auto;
         right: auto;
     }
@@ -622,9 +623,10 @@ body {
     .plan_x_new_news {
         font-size: 50px;
         right: 151px;
-        bottom: 238px;
+        bottom: 275px;
     }
     .plan_x_new {
+        height: 322px;
         width: 280px;
     }
     .swiper-slide .text{
@@ -634,7 +636,7 @@ body {
         font-size: 35px;
     }
     .swiper-slide-important-top {
-        // height: 415px !important;
+        
         width: 415px !important;
         padding: 0;
     }
