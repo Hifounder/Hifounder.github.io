@@ -83,7 +83,6 @@ body {
 
 .plan_x_new {
     width: 500px;
-    height: 300px;
     background-color: rgba($color: #000000, $alpha: 0.8);
     z-index: 2000;
     position: absolute;
@@ -164,7 +163,7 @@ body {
 .studio_img {
     background-image: url("img/studio.jpg");
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -438,7 +437,6 @@ body {
     width: 104px !important;
 }
 .swiper-slide-top-width{
-    width: 500px !important;
     height: 300px !important;
 }
 .cake_text {
@@ -598,6 +596,13 @@ body {
     .home_media_a{
         right: 0;
     }
+    .story{
+        width: auto;
+        right: auto;
+    }
+    .planxname{
+        font-size: 5rem;
+    }
     .studio-p{
         position: absolute;
         top: 2%;
@@ -614,8 +619,17 @@ body {
         font-size: 2rem;
         z-index: 5;
     }
+    .plan_x_new {
+        width: 280px;
+    }
+    .swiper-slide .text{
+        font-size: 12px;
+    }
+    .swiper-slide .title{
+        font-size: 35px;
+    }
     .swiper-slide-important-top {
-        height: 415px !important;
+        // height: 415px !important;
         width: 415px !important;
         padding: 0;
     }
