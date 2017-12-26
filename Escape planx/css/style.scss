@@ -518,6 +518,7 @@ footer .downLogo {
 }
 .copyright{
     margin: auto;
+    font-size: 0.8rem;
 }
 footer h5.copyright p {
 	display: inline-block;
@@ -556,6 +557,17 @@ footer .copyrightBox {
 .translateIbest .design a:hover {
 	text-decoration: underline;
 	color: #fff;
+}
+
+.footericon{
+    color: white;
+    margin: 20px;
+}
+.footericon:hover{
+    color: #797979;
+}
+.footericon i{
+    text-decoration: none;
 }
 
 
@@ -636,6 +648,25 @@ footer .copyrightBox {
         }
 
 }
+@media screen and (max-width:992px){
+    .cake_text{
+        display: none;
+    }
+    .swiper-slide-important-top {
+        
+        width: 498px !important;
+        padding: 0;
+    }
+    .swiper-slide-important-top img{
+
+        width: 498px !important; 
+        height: 498px !important;
+        margin: -40px 0;
+    }
+    .modal-footer{
+        width: 498px;
+    }
+}
 @media screen and (max-width:769px){
     #plan_x_logo{
         width: 150px;
@@ -694,8 +725,17 @@ footer .copyrightBox {
     }
     .swiper-slide-important-top {
         
-        width: 415px !important;
+        width: 498px !important;
         padding: 0;
+    }
+    .swiper-slide-important-top img{
+
+        width: 498px !important; 
+        height: 498px !important;
+        margin: -40px 0;
+    }
+    .modal-footer{
+        width: 498px;
     }
     .cake_text{
         display: none;
@@ -760,5 +800,40 @@ footer .copyrightBox {
         background-image: url('img/stewart/STEWART04.jpg');
         height: 200px;
         animation: memberhover 1s forwards;
+    }
+}
+@media screen and (max-width:576px){
+    .swiper-slide-important-top {      
+        width: 388px !important;
+        padding: 0;
+    }
+    .swiper-slide-important-top img{
+
+        width: 353px !important; 
+        height: 353px !important;
+        margin: auto;
+    }
+    .modal-footer{
+        width: auto;
+    }
+}
+@media screen and (max-width:415px){
+    .modal-body{
+        height: 353px;
+    }
+    .swiper-slide-important-top img{
+
+        width: 353px !important; 
+        height: 353px !important;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width:376px){
+    .swiper-slide-important-top img{
+
+        width: 353px !important; 
+        height: 353px !important;
+        padding: 20px;
+        margin-left: 0px;
     }
 }
