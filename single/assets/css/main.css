@@ -293,7 +293,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffe4b4;
+			color: #b4ffff;
 		}
 
 	strong, b {
@@ -1611,7 +1611,7 @@
 			input[type="button"].special.color1,
 			button.special.color1,
 			.button.special.color1 {
-				color: #726193 !important;
+				color: #a0a0a0 !important;
 			}
 
 			input[type="submit"].special.color2,
@@ -1643,7 +1643,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #ffe4b4;
+				background-color: #b4ffff;
 			}
 
 			input[type="submit"].special:active,
@@ -1651,7 +1651,8 @@
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
-				background-color: #fdd997;
+				background-color: #a2e2e2;
+
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2167,6 +2168,7 @@
 		height: 100%;
 		overflow-x: hidden;
 		overflow-y: auto;
+
 	}
 
 		.panel > * {
@@ -2175,7 +2177,7 @@
 		}
 		
 			.panel > *.color0 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #6a68f7 20%, #8268f7  60%, #fff);
+				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #53887b 20%, #99cea4  60%, #fff);
 				background-size: 128px 128px, auto;
 			}
 
