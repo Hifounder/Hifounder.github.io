@@ -1,1 +1,36 @@
-<!DOCTYPE html><html><head><title>HifounderLearn</title><script src="https://apis.google.com/js/platform.js?onload=initgoogle"></script><meta charset=utf-8><link href=/css/Home.4773f228.css rel=prefetch><link href=/js/Home.97a34823.js rel=prefetch><link href=/js/about.14098f06.js rel=prefetch><link href=/css/app.cbd0c9e4.css rel=preload as=style><link href=/js/app.45d108f9.js rel=preload as=script><link href=/js/chunk-vendors.05a9c5de.js rel=preload as=script><meta name=viewport content="width=device-width,initial-scale=1,user-scalable=no"><link href=/css/app.cbd0c9e4.css rel=stylesheet></head><body><div id=app></div><script src=/js/chunk-vendors.05a9c5de.js></script><script src=/js/app.45d108f9.js></script></body></html>
+---
+layout: default
+---
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="/">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
