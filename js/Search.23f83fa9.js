@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["Search"],{"2d3b":function(e,n,c){"use strict";c.r(n);var a=function(){var e=this,n=e.$createElement,c=e._self._c||n;return c("div",[e._v("\n    search page\n")])},t=[],r=(c("cadf"),c("551c"),c("097d"),{}),l=r,s=c("2877"),u=Object(s["a"])(l,a,t,!1,null,null,null);n["default"]=u.exports}}]);
+//# sourceMappingURL=Search.23f83fa9.js.map
