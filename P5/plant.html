@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="mycanvas1"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <script>
+        function setup() {
+            let cnv1 = createCanvas(300, 300, WEBGL);
+            cnv1.parent('mycanvas1');
+        }
+
+        function draw() {
+            background('rgba(0%,0%,0%,0%)');
+            // normalMaterial();
+            rotateZ(-1000);
+            rotateX(frameCount * 0.05);
+            rotateY(900);
+            noStroke();
+
+            push();
+            fill('rgb(200,205,185)');
+            translate(0, 0, 0);
+            sphere(50);
+            pop();
+
+            push();
+            fill('rgb(158,169,157)');
+            torus(80, 1.5);
+            translate(0, 0, 0);
+            pop();
+
+            push();
+            fill('rgb(158,169,157)');
+            rotateZ(frameCount * 0.001);
+            rotateY(frameCount * 0.05);
+            torus(80, 1.5);
+            translate(0, -180, 0);
+            pop();
+
+            push();
+            fill('rgb(231,217,193)');
+            translate(80, 0, 0);
+            sphere(10);
+            pop();
+
+
+            push();
+            fill('rgb(152,196,157)');
+            rotateZ(frameCount * 0.001);
+            rotateY(frameCount * 0.005);
+            translate(-70, 0, 0);
+            sphere(5);
+            pop();
+
+        }
+
+    </script>
+</body>
+
+</html>

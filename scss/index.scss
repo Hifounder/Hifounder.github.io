@@ -1,0 +1,549 @@
+// !default use Boostrap 4.3 SCSS Grid
+@import "function";
+@import "variables";
+@import "mixins/breakpoints";
+@import "mixins/grid-framework";
+@import "mixins/grid";
+
+@import "grid";
+@import "utilities/display";
+@import "utilities/flex";
+@import "utilities/spacing";
+
+body {
+    margin: 0 auto;
+    background-color: $body-bg;
+    max-width: 1920px;
+}
+
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+    box-sizing: border-box;
+    transition: 1s;
+    // outline: 1px solid red;
+}
+section{
+    position: relative;
+    height: 100vh;
+}
+.title{
+    font-size: 80px;
+    font-weight: 700;
+    color: #666;
+    margin: 0;
+}
+.main_grid{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template:repeat(20, 5%)/repeat(24, 1fr);
+}
+// wave
+@keyframes wave {
+    0% { 
+      left: -160px; 
+    }
+    100% { 
+      left: 0px; 
+    }
+  }
+.wave_box{
+    position: absolute;
+    overflow: hidden;
+    width: 200px;
+    height: 154.92px;
+} 
+.wave{
+    width: 400px;
+    animation: wave 6s linear infinite;
+}
+// rotate
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+// navbar
+
+#navbar {
+    position: fixed;
+    z-index: 10;
+        .navbar_span {
+            margin: 0;
+            position: fixed;
+            top: 50%;
+            left: 22px;
+            transform: rotate(90deg) translateX(-50%);
+            text-align: center;
+            font-size: 12px;
+        }
+        .navbar_links {
+            padding: 0;
+            position: fixed;
+            bottom: 200px;
+            left: 120px;
+            margin: 0;
+            list-style-type: none;
+
+            li {
+                line-height: 26px;
+
+                a {
+                    font-size: 24px;
+                    text-decoration: none;
+                    font-weight: 100;
+                    color: #666;
+                }
+            }
+        }
+}
+
+// section1
+.section1{
+    .main1_title{
+        padding-top: 80px;
+        h1,h2{
+            margin: 0;
+            line-height: 120px;
+            margin-left: 40px;
+        }
+        h1{
+            font-size: 130px;
+            font-weight: 900;
+            color: #666;
+        }
+        h2{
+            font-size: 120px;
+            -webkit-text-stroke: 3px #666;
+            color: rgba($color: #000000, $alpha: 0);
+        }
+    }
+    .main1_box{
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top: 200px;
+        right: 50px;
+        .square{
+            width: 400px;
+            height: 400px;
+            border-radius: 30px;
+            box-shadow: 0px 0px 15px 0 #999;
+            position: absolute;
+            background-image: url(../images/Personal/PersonalPhoto02.jpg);
+            background-attachment: fixed;
+            background-position-x:right;
+            background-size: contain;
+            .square_img{
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+                background-color:rgba(255, 255, 255, 0.75);
+                // filter: invert(20%);
+            }
+        }
+        .wave_box{
+            transform: rotate(0deg);
+            position: absolute;
+            left: -150px;
+            bottom: 0;
+            .main_wave1{
+                left: -50px;
+                position: absolute;
+            }
+        }
+        .triangle{
+            fill:none ;
+            width: 100px;
+            stroke-width:15px;
+            position: absolute;
+            right: 50px;
+            top: -50px;
+            animation: rotate 15s linear infinite;
+        }
+        .polygon{
+            width: 150px;
+            transform: rotate(90deg);
+            position: absolute;
+            right: 25px;
+            bottom: 0px;
+        }
+    }
+    .main1{
+        position: absolute;
+        right: 100px;
+        text-align: right;
+        bottom: 86px;
+        color: #666;
+        h3{
+            margin: 0;
+            font-size: 22px;
+        }
+        p{
+            margin: 0;
+            font-weight: 100;
+        }
+        span{
+            font-size: 12px;
+        }
+    }
+    .wave_box{
+        left: 27.5%;
+        bottom: -100px;
+        z-index: 2;
+        transform: rotate(90deg);
+        .main_wave2{
+            left: -50px;
+            position: absolute;
+        }
+    }
+}
+
+// section2
+.section2{
+    .main2_title .title{
+        position: absolute;
+        left: 120px;
+        top: 120px;
+        font-weight: 900;
+    }
+        .main2_main_title{
+            grid-area: 2/25/20/9;
+            background-image: url(../images/Personal/PersonalPhoto02.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position-x: right;
+            background-size: contain;
+            float: right;
+            h1{
+                font-size: 100px;
+                color: #fff;
+                margin: 0 100px 0 0;
+                text-align: right;
+                line-height: 120px;
+            }
+            .main_from{
+                margin-top: 450px;
+            }
+        }
+    .main2_main{
+        grid-area: 19/8/17/12;
+        p{
+        background-color: #fff;
+        padding: 5px;
+        border-left: 1px solid #666;
+        margin: 0;
+        color: #666;
+        position: relative;
+        &::after{
+            content: ' ';
+            border-style: solid;
+            border-width: 0 0 16px 16px;
+            border-color: transparent transparent #666 transparent;
+            line-height: 0px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            }
+        }
+    }
+    .polygon{
+        width: 700px;
+        transform: rotate(90deg);
+        position: relative;
+        grid-area: 13/5/10/10;
+        z-index: -1;
+    }
+}
+
+// section3
+.section3{
+    .jellyfish{
+        position: absolute;
+        left: 120px;
+        top: 120px;
+        z-index: -1;
+        width: 150px;
+    }
+    .main3_title .title{
+        position: absolute;
+        right: 120px;
+        top: 120px;
+        font-weight: 900;
+    }
+    h3{
+        margin: 0 0 70px 0;
+        color: #666
+    }
+    .skill_margin{
+        padding-top: 400px;
+    }
+        .skill{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            li{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-bottom: 50px;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+                .main3_progress{
+                    width: 185px;
+                    span{
+                        display: block;
+                        text-align: right;
+                        font-size: 25px;
+                        color: #666
+                    }
+                    .main3_progress_bar_out{
+                        width: 100%;
+                        height: 5px;
+                        margin-top: 8px;
+                        border-right: 1px solid #666;
+                        .main3_progress_bar{
+                            height: 100%;
+                            background-color: #666;
+                            &.progress_bar_01{
+                                width: 70%;
+                            }
+                            &.progress_bar_02{
+                                width: 50%;
+                            }
+                            &.progress_bar_03{
+                                width: 90%;
+                            }
+                            &.progress_bar_04{
+                                width: 90%;
+                            }
+                            &.progress_bar_05{
+                                width: 60%;
+                            }
+                            &.progress_bar_06{
+                                width: 70%;
+                            }
+                            &.progress_bar_07{
+                                width: 60%;
+                            }
+                            &.progress_bar_08{
+                                width: 60%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+
+// section4
+.section4{
+    #plant{
+        position: absolute;
+        right: 50px;
+        z-index: -1;
+    }
+    .main2_title .title{
+        position: absolute;
+        left: 120px;
+        top: 120px;
+        font-weight: 900;
+    }
+    .main4_svg_group{
+        position: absolute;
+        left: 50px;
+        width: 300px;
+        .main4_circle{
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+            width: 150px;
+            height: 150px;
+        }
+        .main4_rect{
+            position: absolute;
+            top:50%;
+            left: 60%;
+            transform: translateY(-50%);
+            width: 75px;
+            height: 75px;
+        }
+        .main4_fill_triangle{
+            position: absolute;
+            top:50%;
+            left: 90%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+
+        }
+    }
+    .dote{
+        position: absolute;
+        right: 50px;
+        width: 50px;
+        top: -38.99px;
+    }
+    .personal_img1{
+        background-image: url(../images/Personal/PersonalPhoto.jpg);
+        grid-area: 19/8/7/10;
+        background-position: 42% center;
+        filter:opacity(.2);
+    }
+    .swiper-work-experience-out{
+        grid-area: 18/25/10/13;
+        overflow: hidden;
+        .swiper-pagination {
+            bottom:auto;
+        }
+        .swiper-container{
+            height: 100%;
+            .swiper-slide {
+                &:first-child .item .item_title {
+                    &::before{
+                        display:block;/* probably not really needed? */
+                        content: "";
+                        width:50%;
+                        height:10px;/* slight higher to work around rounding errors(?) on some zoom levels in some browsers. */
+                        background-color:rgb(255, 255, 255);
+                        position: absolute;
+                        left: 0;
+                        bottom: -3px;
+                        transform: translate(0%, 50%);
+                     }
+                }
+                .item{
+                    list-style-type: none;
+                    text-align: center;
+                    margin: 0;
+                    padding: 0;
+                    color: #666;
+                    .item_title{
+                        font-size: 40px;
+                        border-bottom: 5px solid #666;
+                        position: relative;
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            bottom: 0%;
+                            // left: 50%;
+                            transform: translate(-50%, 50%);
+                            display: inline-block;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 15px;
+                            background-color: #666;
+                         }
+                        h1{
+                            margin-top: 0;
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .company{
+                        height: 115px;
+                        width: 100%;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        margin: 30px 0;
+                        &.company1{
+                            background-image: url(../images/Companys/金煜達.svg);
+                        }
+                        &.company2{
+                            background-image: url(../images/Companys/Kurrency.png);
+                        }
+                        &.company3{
+                            background-image: url(../images/Companys/Digi-Pack.svg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .wave_box{
+        left: 10%;
+        bottom: -100px;
+        z-index: 2;
+        transform: rotate(45deg);
+        .main_wave3{
+            left: -50px;
+            position: absolute;
+        }
+    }
+}
+
+// section5
+.section5{
+    .main5_title .title{
+        position: absolute;
+        right: 120px;
+        top: 120px;
+        font-weight: 900;
+    }
+    .personal_img2{
+        background-image: url(../images/Personal/PersonalPhoto03.jpg);
+        grid-area: 19/6/7/8;
+        background-position: center;
+        filter:opacity(.2);
+    }
+    .special_name{
+        position: absolute;
+        top: 35%;
+        left: 20%;
+        display: inline-block;
+        font-size: 150px;
+        transform: rotate(-90deg);
+        font-weight: 100;
+        margin: 0;
+        color:#666;
+    }
+    .works_all{
+        grid-area: 3/14/25/25;
+        ul{
+            color: #666;
+            list-style-type: none;
+            margin: 200px 0 0 0;
+            padding: 0;
+            li{
+                border-bottom: 1px solid #666;
+                &:last-child{
+                    border-bottom: 0px solid #666;
+                }
+                h3{
+                    margin-bottom: 0;
+                    font-size: 30px;
+                }
+                .swiper-works-01,.swiper-works-02,.swiper-works-03{
+                padding: 50px 0;
+                    .swiper-wrapper .swiper-slide{
+                        width: 175px !important;
+                        img{
+                            width: 175px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .detail{    
+        grid-area: 20/18/20/6;
+        font-size: 80px;
+        margin-top: 200px;
+        color:#666;
+        margin-bottom: 0;
+        span{
+            a{
+                font-size: 40px;
+                text-decoration: none;
+                color:#666;
+            }
+        }
+    }
+}
