@@ -14,12 +14,13 @@ body {
     margin: 0 auto;
     background-color: $body-bg;
     max-width: 1920px;
+    overflow-x: hidden;
 }
 
 * {
     font-family: 'Noto Sans TC', sans-serif;
     box-sizing: border-box;
-    transition: 1s;
+    // transition: 1s;
     // outline: 1px solid red;
 }
 section{
@@ -93,13 +94,18 @@ section{
             list-style-type: none;
 
             li {
-                line-height: 26px;
-
                 a {
                     font-size: 24px;
+                    padding: 0 5px;
                     text-decoration: none;
                     font-weight: 100;
                     color: #666;
+                    border-left: 1px solid rgba($color: #000000, $alpha: 0);
+                    transition: 0.5s;
+                    &:hover{
+                        border-left: 1px solid #999;
+                        color: #333;
+                    }
                 }
             }
         }
@@ -234,11 +240,12 @@ section{
             }
         }
     .main2_main{
-        grid-area: 19/8/17/12;
+        grid-area: 19/8/17/13;
         p{
         background-color: #fff;
-        padding: 5px;
-        border-left: 1px solid #666;
+        box-shadow: 0 0 5px 0px #666;
+        border-radius: 5px ;
+        padding: 10px;
         margin: 0;
         color: #666;
         position: relative;
@@ -284,6 +291,9 @@ section{
     }
     .skill_margin{
         padding-top: 400px;
+        position: relative;
+        left: 200px;
+        opacity: 0;
     }
         .skill{
             margin: 0;
@@ -393,10 +403,11 @@ section{
         top: -38.99px;
     }
     .personal_img1{
-        background-image: url(../images/Personal/PersonalPhoto.jpg);
+        // background-image: url(../images/Personal/PersonalPhoto.jpg);
         grid-area: 19/8/7/10;
-        background-position: 42% center;
-        filter:opacity(.2);
+        // background-position: 42% center;
+        // filter:opacity(.2);
+        box-shadow: 0px 0px 5px 0px #666;
     }
     .swiper-work-experience-out{
         grid-area: 18/25/10/13;
@@ -478,7 +489,6 @@ section{
         }
     }
 }
-
 // section5
 .section5{
     .main5_title .title{
@@ -488,10 +498,11 @@ section{
         font-weight: 900;
     }
     .personal_img2{
-        background-image: url(../images/Personal/PersonalPhoto03.jpg);
+        // background-image: url(../images/Personal/PersonalPhoto03.jpg);
         grid-area: 19/6/7/8;
-        background-position: center;
-        filter:opacity(.2);
+        // background-position: center;
+        // filter:opacity(.2);
+        box-shadow: 0px 0px 5px 0px #666;
     }
     .special_name{
         position: absolute;

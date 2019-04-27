@@ -255,7 +255,13 @@
         <h2 class="title">Work Experience.</h2>
       </div>
       <div class="main_grid">
-        <div class="personal_img1"></div>
+        <div
+          class="personal_img1"
+          data-parallax="scroll"
+          data-bleed="0"
+          data-position="-320px center"
+          data-image-src="images/Personal/PersonalPhoto.jpg"
+        ></div>
         <div class="swiper-work-experience-out">
           <div class="swiper-container swiper-work-experience">
             <div class="swiper-pagination"></div>
@@ -299,7 +305,12 @@
       </div>
       <h1 class="special_name">Hifounder.</h1>
       <div class="main_grid">
-        <div class="personal_img2"></div>
+        <div
+          class="personal_img2"
+          data-parallax="scroll"
+          data-speed="0.5"
+          data-image-src="images/Personal/PersonalPhoto03.jpg"
+        ></div>
         <div class="works_all">
           <ul>
             <li>
@@ -364,37 +375,73 @@
             </li>
           </ul>
         </div>
-      <h1 class="detail">
-            HI 方德
-            <span>
-              <a href="https://www.facebook.com/za.wu.5">
-                <i class="fab fa-facebook"></i>
-              </a>
-              <a href="https://github.com/Hifounder">
-                <i class="fab fa-github"></i>
-              </a>
-            </span>
-          </h1>
+        <h1 class="detail">
+          HI 方德
+          <span>
+            <a href="https://www.facebook.com/za.wu.5">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://github.com/Hifounder">
+              <i class="fab fa-github"></i>
+            </a>
+          </span>
+        </h1>
       </div>
     </section>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- parallax -->
+    <script src="js/parallax.min.js"></script>
+    <!-- swiper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+    <!-- tweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <!-- scrollMagic -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="js/animation.gsap.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+
     <!-- Initialize Swiper -->
+
     <script>
-      var swiper = new Swiper(".swiper-work-experience", {
-        slidesPerView: 3
-      });
-      var swiper = new Swiper(".swiper-works-01", {
-        spaceBetween: 15,
-        slidesPerView: 4
-      });
-      var swiper = new Swiper(".swiper-works-02", {
-        spaceBetween: 15,
-        slidesPerView: 4
-      });
-      var swiper = new Swiper(".swiper-works-03", {
-        spaceBetween: 15,
-        slidesPerView: 4
-      });
+      {
+        // swiper
+        new Swiper(".swiper-work-experience", {
+          slidesPerView: 3
+        });
+        new Swiper(".swiper-works-01", {
+          spaceBetween: 15,
+          slidesPerView: 4
+        });
+        new Swiper(".swiper-works-02", {
+          spaceBetween: 15,
+          slidesPerView: 4
+        });
+        new Swiper(".swiper-works-03", {
+          spaceBetween: 15,
+          slidesPerView: 4
+        });
+
+        TweenMax.set(".main1_title", { x: -100, opacity: 0 });
+        TweenMax.to(".main1_title", 1, { x: 0, opacity: 1 });
+
+        let controller = new ScrollMagic.Controller();
+        let tw01 = TweenMax.to(".skill_margin ", 1, { x: -200 ,opacity: 1});
+
+        let scene_01 = new ScrollMagic.Scene({
+          triggerElement: ".main3_title .title",
+          offset: 100,
+          duration: 0,
+          reverse: false
+        })
+          .setTween(tw01)
+          // .addIndicators({
+          //   name: "section01",
+          //   colorStart: "#f20",
+          //   colorEnd: "#000"
+          // })
+          .addTo(controller);
+      }
     </script>
   </body>
 </html>
