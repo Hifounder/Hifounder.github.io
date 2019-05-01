@@ -56,9 +56,6 @@
         <br />
         <span>scroll down</span>
       </div>
-      <div class="wave_box">
-        <img class="wave main_wave2" src="images/SVG/wave.svg" alt="" />
-      </div>
     </section>
     <!-- section2  -->
     <section id="about" class="section2">
@@ -67,6 +64,9 @@
       </div>
       <div class="main_grid">
         <div class="main2_main_title">
+          <div class="wave_box">
+            <img class="wave main_wave2" src="images/SVG/wave.svg" alt="" />
+          </div>
           <h1>1995</h1>
           <div class="main_from">
             <h1>桃園.南崁</h1>
@@ -89,7 +89,7 @@
       </div>
       <div class="container">
         <div class="row skill_margin">
-          <div class="col-3">
+          <div class="col-xl-3 col-lg-6">
             <h3>Design Tools</h3>
             <ul class="skill">
               <li>
@@ -124,11 +124,11 @@
               </li>
             </ul>
           </div>
-          <div class="col-1"></div>
-          <div class="col-6">
+          <div class="col-xl-1 col-lg-12"></div>
+          <div class="col-xl-6 col-lg-12 skill_h3">
             <h3>Develope Tools</h3>
             <div class="row">
-              <div class="col-6">
+              <div class="col-xl-6 col-lg-6 col-md-6 ">
                 <ul class="skill">
                   <li>
                     <img
@@ -177,8 +177,8 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-6">
-                <ul class="skill">
+              <div class="col-xl-6 col-lg-6 col-md-6">
+                <ul class="skill skill2">
                   <li>
                     <img
                       class="main3_logo"
@@ -407,26 +407,56 @@
       {
         // swiper
         new Swiper(".swiper-work-experience", {
-          slidesPerView: 3
+          breakpointsInverse: true,
+          breakpoints: {
+            500: {
+              slidesPerView: 3,
+            },
+            480: {
+              slidesPerView: 1
+            }
+          }
         });
+
         new Swiper(".swiper-works-01", {
           spaceBetween: 15,
-          slidesPerView: 4
+          breakpoints: {
+            500: {
+              slidesPerView: 4,
+            },
+            480: {
+              slidesPerView: 2
+            }
+          }
         });
         new Swiper(".swiper-works-02", {
           spaceBetween: 15,
-          slidesPerView: 4
+          breakpoints: {
+            500: {
+              slidesPerView: 4,
+            },
+            480: {
+              slidesPerView: 2
+            }
+          }
         });
         new Swiper(".swiper-works-03", {
           spaceBetween: 15,
-          slidesPerView: 4
+          breakpoints: {
+            500: {
+              slidesPerView: 4,
+            },
+            480: {
+              slidesPerView: 2
+            }
+          }
         });
 
         TweenMax.set(".main1_title", { x: -100, opacity: 0 });
         TweenMax.to(".main1_title", 1, { x: 0, opacity: 1 });
 
         let controller = new ScrollMagic.Controller();
-        let tw01 = TweenMax.to(".skill_margin ", 1, { x: -200 ,opacity: 1});
+        let tw01 = TweenMax.to(".skill_margin ", 1, { opacity: 1 });
 
         let scene_01 = new ScrollMagic.Scene({
           triggerElement: ".main3_title .title",
