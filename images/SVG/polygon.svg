@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="400">
-    <defs>
-        <filter id="filter">
-            <feGaussianBlur stdDeviation="2" />
-        </filter>
-    </defs>
-    <polygon style="fill:none;stroke:#666666;stroke-width:15px" points="150,75 258,137.5 258,262.5 150,325 42,262.6 42,137.5" filter="url(#filter)"/>
-</svg>
